@@ -7,11 +7,10 @@ export default function Navbar() {
 
   const navItems = [
     { name: 'Home', href: '#home', hasDropdown: false },
-    { name: 'About Us', href: '#about-us', hasDropdown: false },
     { name: 'Properties', href: '#services', hasDropdown: false },
-
     { name: 'Document ', href: '#why-us', hasDropdown: false },
     { name: 'NRI Property', href: '#testimonials', hasDropdown: false },
+       { name: 'About Us', href: '#about-us', hasDropdown: false },
     { name: 'Contact', href: '#contact', hasDropdown: false },
   ];
 
