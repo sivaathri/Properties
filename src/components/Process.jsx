@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import testimonialImg from '../assets/tes.png';
+import testimonialImg1 from '../assets/tes.png';
+import testimonialImg2 from '../assets/service_buying.png';
+import testimonialImg3 from '../assets/service_documents.png';
+import testimonialImg4 from '../assets/service_nri.png';
 
 export default function Process() {
   const steps = [
@@ -74,22 +77,30 @@ export default function Process() {
     {
       quote: "Excellent service and smooth process! The team at Thirumalai Properties guided us at every step. Highly recommended!",
       author: "Ramesh Kumar",
-      stars: 5
+      stars: 5,
+      image: testimonialImg1,
+      alt: "Cozy modern living room with warm sofa"
     },
     {
       quote: "Extremely professional and transparent documentation. They helped us buy our dream villa without any hassle. A++ service!",
       author: "Suresh Pillai",
-      stars: 5
+      stars: 5,
+      image: testimonialImg2,
+      alt: "Double story luxury villa exterior and lawns"
     },
     {
       quote: "As an NRI, I was worried about property verification. Thirumalai Properties did a fantastic job verifying everything. Trustworthy team!",
       author: "Priya Ramakrishnan",
-      stars: 5
+      stars: 5,
+      image: testimonialImg4,
+      alt: "Global modern skyscrapers city view at sunset"
     },
     {
       quote: "Great support after registration too! They helped with tax transfers and utility connections. Excellent customer care.",
       author: "Rajesh Sekhar",
-      stars: 5
+      stars: 5,
+      image: testimonialImg3,
+      alt: "Legal registration paperwork and wood stamp desk"
     }
   ];
 
@@ -172,7 +183,7 @@ export default function Process() {
         </div>
 
         {/* Testimonial Card Slider */}
-        <div className="mt-16 md:mt-24 bg-[#FAF7F0] rounded-[2rem] overflow-hidden border border-stone-100/50 shadow-sm relative flex flex-col md:flex-row items-stretch justify-between min-h-[260px] sm:min-h-[215px] md:min-h-[185px]">
+        <div className="mt-16 md:mt-24 bg-[#FAF7F0] rounded-[2rem] overflow-hidden border border-stone-100/50 shadow-sm relative flex flex-col md:flex-row items-stretch justify-between h-auto md:h-[200px]">
           
           {/* Left Side: Review Content with Fade Animation */}
           <div className="flex-1 p-6 sm:p-8 md:p-8 flex items-start gap-4 sm:gap-6 z-10">
@@ -218,11 +229,12 @@ export default function Process() {
           </div>
 
           {/* Right Side: Living Room Image */}
-          <div className="relative w-full md:w-[42%] h-[200px] md:h-auto self-stretch overflow-hidden">
+          <div className="relative w-full md:w-[42%] h-[200px] md:h-full overflow-hidden">
             <img
-              src={testimonialImg}
-              alt="Modern Cozy Living Room"
-              className="w-full h-full object-cover"
+              key={activeSlide}
+              src={testimonials[activeSlide].image}
+              alt={testimonials[activeSlide].alt}
+              className="w-full h-full object-cover animate-fade-in-up"
             />
             {/* Soft gradient mask fading to the cream background on the left */}
             <div className="absolute inset-y-0 -left-1 w-24 bg-gradient-to-r from-[#FAF7F0] via-[#FAF7F0]/80 to-transparent pointer-events-none hidden md:block" />

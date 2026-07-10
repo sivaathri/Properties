@@ -7,10 +7,11 @@ export default function Navbar() {
 
   const navItems = [
     { name: 'Home', href: '#home', hasDropdown: false },
-    { name: 'Services', href: '#services', hasDropdown: true },
     { name: 'About Us', href: '#about-us', hasDropdown: false },
-    { name: 'Why Us', href: '#why-us', hasDropdown: false },
-    { name: 'Testimonials', href: '#testimonials', hasDropdown: false },
+    { name: 'Properties', href: '#services', hasDropdown: false },
+
+    { name: 'Document ', href: '#why-us', hasDropdown: false },
+    { name: 'NRI Property', href: '#testimonials', hasDropdown: false },
     { name: 'Contact', href: '#contact', hasDropdown: false },
   ];
 
@@ -18,13 +19,13 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-stone-100 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 md:h-24">
-          
+
           {/* Logo */}
           <a href="#home" className="flex flex-col items-center justify-center group py-1">
-            <img 
-              src={logoSymbol} 
-              alt="Thirumalai Properties Icon" 
-              className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]" 
+            <img
+              src={logoSymbol}
+              alt="Thirumalai Properties Icon"
+              className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
             />
             <div className="flex flex-col items-center mt-1 select-none">
               <span className="font-serif font-bold text-lg md:text-xl tracking-[0.12em] leading-none bg-gradient-to-b from-[#F5BC04] via-[#D29F13] to-[#9F7202] bg-clip-text text-transparent">
@@ -47,11 +48,10 @@ export default function Navbar() {
                 <a
                   href={item.href}
                   onClick={() => setActiveTab(item.name)}
-                  className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-all duration-300 py-2 ${
-                    activeTab === item.name 
-                      ? 'text-brand-yellow' 
+                  className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-all duration-300 py-2 ${activeTab === item.name
+                      ? 'text-brand-yellow'
                       : 'text-stone-700 hover:text-brand-gold'
-                  }`}
+                    }`}
                 >
                   {item.name}
                   {item.hasDropdown && (
@@ -60,12 +60,12 @@ export default function Navbar() {
                     </svg>
                   )}
                 </a>
-                
+
                 {/* Underline Indicator for active state */}
                 {activeTab === item.name && (
                   <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-6 h-[3px] bg-brand-yellow rounded-full transition-all duration-300"></span>
                 )}
-                
+
                 {/* Micro-hover bar for others */}
                 {activeTab !== item.name && (
                   <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-brand-gold opacity-0 group-hover:w-6 group-hover:opacity-100 transition-all duration-300"></span>
@@ -124,11 +124,10 @@ export default function Navbar() {
                 setActiveTab(item.name);
                 setIsOpen(false);
               }}
-              className={`block px-4 py-3 rounded-lg text-base font-semibold transition-all ${
-                activeTab === item.name 
-                  ? 'bg-amber-50 text-brand-yellow font-bold' 
+              className={`block px-4 py-3 rounded-lg text-base font-semibold transition-all ${activeTab === item.name
+                  ? 'bg-amber-50 text-brand-yellow font-bold'
                   : 'text-stone-700 hover:bg-stone-50 hover:text-brand-gold'
-              }`}
+                }`}
             >
               {item.name}
             </a>

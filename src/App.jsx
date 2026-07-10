@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import Services from './components/Services'
 import Process from './components/Process'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -15,11 +16,13 @@ function App() {
       {/* Main content area */}
       <main>
         <Hero />
-            <Services />
+        <Services />
         <Features />
         <Process />
-    
       </main>
+
+      {/* Footer area */}
+      <Footer />
     </div>
   )
 }
