@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logoSymbol from '../assets/logo1.png';
 import footerImg from '../assets/footer.png';
 
 export default function Footer() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <footer className="w-full relative overflow-hidden">
       
@@ -17,7 +38,7 @@ export default function Footer() {
 
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-20">
           {/* CTA Text */}
-          <div className="text-center md:text-left md:pl-48">
+          <div className="text-center md:text-left md:pl-28 lg:pl-36 xl:pl-48">
             <span className="text-xs sm:text-sm font-semibold text-[#23190E]/80 tracking-wider uppercase">
               Need Property Assistance?
             </span>
@@ -64,7 +85,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0">
             
             {/* Column 1: Brand Logo & Socials */}
-            <div className="flex flex-col items-start lg:pr-8 lg:border-r border-[#23190E]/10">
+            <div className="flex flex-col items-start md:pr-4 lg:pr-8 md:border-r lg:border-r border-[#23190E]/10">
               <div className="flex items-center gap-3 select-none mb-4">
                 <img src={logoSymbol} alt="Thirumalai Properties Icon" className="h-11 w-auto object-contain brightness-0 invert" />
                 <div className="flex flex-col items-start mt-0.5">
@@ -115,7 +136,7 @@ export default function Footer() {
             </div>
 
             {/* Column 2: Quick Links */}
-            <div className="flex flex-col items-start lg:pl-12 lg:pr-8 lg:border-r border-[#23190E]/10">
+            <div className="flex flex-col items-start md:pl-6 lg:pl-12 lg:pr-8 lg:border-r border-[#23190E]/10">
               <h4 className="text-base font-extrabold text-[#23190E] mb-5 uppercase tracking-wide">
                 Quick Links
               </h4>
@@ -131,7 +152,7 @@ export default function Footer() {
             </div>
 
             {/* Column 3: Our Services */}
-            <div className="flex flex-col items-start lg:pl-12 lg:pr-8 lg:border-r border-[#23190E]/10">
+            <div className="flex flex-col items-start md:pr-4 lg:pl-12 lg:pr-8 md:border-r lg:border-r border-[#23190E]/10">
               <h4 className="text-base font-extrabold text-[#23190E] mb-5 uppercase tracking-wide">
                 Our Services
               </h4>
@@ -151,7 +172,7 @@ export default function Footer() {
             </div>
 
             {/* Column 4: Contact Us */}
-            <div className="flex flex-col items-start lg:pl-12">
+            <div className="flex flex-col items-start md:pl-6 lg:pl-12">
               <h4 className="text-base font-extrabold text-[#23190E] mb-5 uppercase tracking-wide">
                 Contact Us
               </h4>
@@ -189,6 +210,19 @@ export default function Footer() {
 
         </div>
       </div>
+
+      {/* Floating Back to Top Button */}
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 z-50 bg-[#F5BC04] hover:bg-[#D49D0E] text-[#23190E] w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 animate-fade-in-up border border-[#23190E]/10"
+          aria-label="Back to top"
+        >
+          <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-current stroke-[2.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="18 15 12 9 6 15" />
+          </svg>
+        </button>
+      )}
 
     </footer>
   );

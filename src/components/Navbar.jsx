@@ -41,7 +41,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex space-x-8 lg:space-x-10">
+          <nav className="hidden lg:flex lg:space-x-6 xl:space-x-8">
             {navItems.map((item) => (
               <div key={item.name} className="relative group flex items-center">
                 <a
@@ -74,7 +74,7 @@ export default function Navbar() {
           </nav>
 
           {/* Phone Call Button */}
-          <div className="hidden md:block lg:-mr-4">
+          <div className="hidden lg:block lg:-mr-4">
             <a
               href="tel:+911234567890"
               className="flex items-center gap-3.5 bg-brand-yellow hover:bg-[#E5B002] active:scale-95 text-brand-dark px-6 py-2.5 rounded-xl font-bold tracking-wide shadow-md hover:shadow-lg transition-all duration-300"
@@ -89,7 +89,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
@@ -113,7 +113,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100 visible' : 'max-h-0 opacity-0 invisible overflow-hidden'}`} id="mobile-menu">
+      <div className={`lg:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100 visible' : 'max-h-0 opacity-0 invisible overflow-hidden'}`} id="mobile-menu">
         <div className="px-4 pt-2 pb-6 space-y-2 bg-white border-t border-stone-100 shadow-inner">
           {navItems.map((item) => (
             <a

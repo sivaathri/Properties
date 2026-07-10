@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Content (Text, Stats, CTAs) */}
-          <div className="lg:col-span-6 lg:-ml-12 xl:-ml-16 flex flex-col z-10 animate-fade-in-up">
+          <div className="lg:col-span-6 flex flex-col z-10 animate-fade-in-up">
             
             {/* Welcome Tag */}
             <div className="flex items-center gap-3 mb-4 sm:mb-5">
