@@ -11,7 +11,7 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
   const navItems = [
     { name: 'Home', href: '#home', hasDropdown: false },
     { name: 'Properties', href: '#Properties', hasDropdown: false },
-    { name: 'Document ', href: '#Document', hasDropdown: false },
+    { name: 'Documents', href: '#Documents', hasDropdown: false },
     { name: 'NRI Property', href: '#NRI-Property', hasDropdown: false },
        { name: 'About Us', href: '#about-us', hasDropdown: false },
     { name: 'Contact', href: '#contact', hasDropdown: false },

@@ -6,6 +6,7 @@ import Services from './components/Services'
 import Process from './components/Process'
 import Footer from './components/Footer'
 import Properties from './components/Properties'
+import Documents from './components/Documents'
 import './App.css'
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       <main>
         {activeTab === 'Properties' ? (
           <Properties />
+        ) : activeTab === 'Documents' ? (
+          <Documents />
         ) : (
           <>
             <Hero />
