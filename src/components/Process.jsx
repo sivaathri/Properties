@@ -172,7 +172,7 @@ export default function Process() {
         </div>
 
         {/* Testimonial Card Slider */}
-        <div className="mt-16 md:mt-24 bg-[#FAF7F0] rounded-[2rem] overflow-hidden border border-stone-100/50 shadow-sm relative flex flex-col md:flex-row items-center justify-between min-h-[260px] sm:min-h-[215px] md:min-h-[185px]">
+        <div className="mt-16 md:mt-24 bg-[#FAF7F0] rounded-[2rem] overflow-hidden border border-stone-100/50 shadow-sm relative flex flex-col md:flex-row items-stretch justify-between min-h-[260px] sm:min-h-[215px] md:min-h-[185px]">
           
           {/* Left Side: Review Content with Fade Animation */}
           <div className="flex-1 p-6 sm:p-8 md:p-8 flex items-start gap-4 sm:gap-6 z-10">
@@ -218,7 +218,7 @@ export default function Process() {
           </div>
 
           {/* Right Side: Living Room Image */}
-          <div className="relative w-full md:w-[42%] h-[200px] md:h-full min-h-[220px] self-stretch overflow-hidden">
+          <div className="relative w-full md:w-[42%] h-[200px] md:h-auto self-stretch overflow-hidden">
             <img
               src={testimonialImg}
               alt="Modern Cozy Living Room"
