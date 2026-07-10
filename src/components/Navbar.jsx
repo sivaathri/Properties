@@ -50,7 +50,7 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
                 <a
                   href={item.href}
                   onClick={() => setActiveTab(item.name)}
-                  className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-all duration-300 py-2 ${activeTab === item.name
+                  className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-all duration-300 py-2 outline-none focus:outline-none ${activeTab === item.name
                       ? 'text-brand-yellow'
                       : 'text-stone-700 hover:text-brand-gold'
                     }`}
@@ -126,7 +126,7 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
                 setActiveTab(item.name);
                 setIsOpen(false);
               }}
-              className={`block px-4 py-3 rounded-lg text-base font-semibold transition-all ${activeTab === item.name
+              className={`block px-4 py-3 rounded-lg text-base font-semibold transition-all outline-none focus:outline-none ${activeTab === item.name
                   ? 'bg-amber-50 text-brand-yellow font-bold'
                   : 'text-stone-700 hover:bg-stone-50 hover:text-brand-gold'
                 }`}

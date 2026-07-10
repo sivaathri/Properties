@@ -6,66 +6,63 @@ import aptImg from '../assets/tes.png';
 export default function Documents() {
   const documentServices = [
     {
-      title: 'Sale Deed',
-      desc: 'Drafting, stamp duty calculation, and complete sub-registrar office registration coordination.',
+      title: 'Document Writing',
+      desc: 'We draft all types of property documents with accuracy and legal validity.',
       icon: (
-        <svg viewBox="0 0 24 24" className="w-8 h-8 text-white stroke-current stroke-[1.5] fill-none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 24 24" className="w-9 h-9 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
           <polyline points="14 2 14 8 20 8" />
-          <line x1="16" y1="13" x2="8" y2="13" strokeWidth="2" />
-          <line x1="16" y1="17" x2="8" y2="17" strokeWidth="2" />
+          <line x1="9" y1="12" x2="13" y2="12" strokeWidth="1.5" />
+          <line x1="9" y1="16" x2="11" y2="16" strokeWidth="1.5" />
+          <path d="M16 11.5l1.5-1.5a1.06 1.06 0 0 1 1.5 0v0a1.06 1.06 0 0 1 0 1.5l-1.5 1.5M16 11.5L12.5 15H11v-1.5l3.5-3.5" strokeWidth="1.5" />
         </svg>
       )
     },
     {
-      title: 'Gift Deed',
-      desc: 'Legally draft and record unconditional transfers of properties to your close family relatives.',
+      title: 'Document Registration',
+      desc: 'Hassle-free registration of sale deeds, title deeds and other documents.',
       icon: (
-        <svg viewBox="0 0 24 24" className="w-8 h-8 text-white stroke-current stroke-[1.5] fill-none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+        <svg viewBox="0 0 24 24" className="w-9 h-9 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <rect x="13" y="14" width="6" height="5" rx="1" strokeWidth="1.5" />
+          <path d="M16 14v-3" strokeWidth="1.5" />
+          <circle cx="16" cy="11" r="1.5" />
         </svg>
       )
     },
     {
-      title: 'Lease & Rent Agreement',
-      desc: 'Clear, balanced, and legally compliant landlord-tenant contract writing with verification.',
+      title: 'Agreement Drafting',
+      desc: 'Sale Agreement, Lease Agreement, Rent Agreement and more.',
       icon: (
-        <svg viewBox="0 0 24 24" className="w-8 h-8 text-white stroke-current stroke-[1.5] fill-none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-          <polyline points="9 22 9 12 15 12 15 22" />
+        <svg viewBox="0 0 24 24" className="w-9 h-9 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+          <rect x="6" y="3" width="12" height="18" rx="2" />
+          <path d="M9 7h6M9 11h6M9 15h3" strokeWidth="1.5" />
+          <path d="M14 15l2 2 3-3" strokeWidth="1.5" />
         </svg>
       )
     },
     {
-      title: 'Power of Attorney (POA)',
-      desc: 'Legally authorize another person to manage, lease, or conduct property sales on your behalf.',
+      title: 'EC & Patta Assistance',
+      desc: 'Assistance for Encumbrance Certificate, Patta transfer and related services.',
       icon: (
-        <svg viewBox="0 0 24 24" className="w-8 h-8 text-white stroke-current stroke-[1.5] fill-none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="10" />
-          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-          <line x1="2" y1="12" x2="22" y2="12" />
+        <svg viewBox="0 0 24 24" className="w-9 h-9 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <circle cx="16" cy="15" r="2" />
+          <path d="M16 17l1.5 2.5-1.5-1-1.5 1z" />
         </svg>
       )
     },
     {
-      title: 'Settlement / Release Deed',
-      desc: 'Draft family partition deeds, release claims, or co-owner share settlement documents.',
+      title: 'Power of Attorney',
+      desc: 'Drafting and registration of Power of Attorney documents.',
       icon: (
-        <svg viewBox="0 0 24 24" className="w-8 h-8 text-white stroke-current stroke-[1.5] fill-none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 24 24" className="w-9 h-9 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
           <circle cx="9" cy="7" r="4" />
           <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
           <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-        </svg>
-      )
-    },
-    {
-      title: 'Mortgage Deed',
-      desc: 'Writing bank or private lender mortgage and collateral security deeds with legal stamps.',
-      icon: (
-        <svg viewBox="0 0 24 24" className="w-8 h-8 text-white stroke-current stroke-[1.5] fill-none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-          <path d="M7 11V7a5 5 0 0 1 10 0v4" />
         </svg>
       )
     }
@@ -164,7 +161,7 @@ export default function Documents() {
       </section>
 
       {/* 2. Why Choose Section (Value Propositions) */}
-      <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-stone-100">
+      <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           
           {/* Section Header */}
@@ -172,78 +169,80 @@ export default function Documents() {
             <h2 className="text-serif text-2.5xl font-bold tracking-tight text-[#D49D0E] uppercase">
               WHY CHOOSE THIRUMALAI PROPERTIES?
             </h2>
-            <div className="flex items-center gap-1.5 mt-4">
-              <span className="h-[2px] w-8 bg-[#D49D0E]"></span>
-              <span className="w-2 h-2 rounded-full bg-[#D49D0E]"></span>
-              <span className="w-2 h-2 rounded-full bg-[#D49D0E]"></span>
-              <span className="h-[2px] w-8 bg-[#D49D0E]"></span>
+            <div className="flex items-center gap-1 mt-4">
+              <span className="h-[2.5px] w-12 bg-[#D49D0E] rounded-l-full"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-[#D49D0E]"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#D49D0E]"></span>
+              <span className="w-1 h-1 rounded-full bg-[#D49D0E]"></span>
             </div>
           </div>
 
           {/* 4 Value Proposition Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-0 mt-14 pb-4">
             
-            {/* Card 1: Legal Expertise */}
+            {/* Card 1: Legally Secure */}
             <div className="relative flex flex-col items-center text-center px-6">
-              <div className="w-16 h-16 rounded-full bg-[#FAF7F0] flex items-center justify-center mb-5 shadow-sm border border-[#D49D0E]/10">
-                <svg viewBox="0 0 24 24" className="w-7 h-7 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-18 h-18 rounded-full bg-[#FFF7E8] flex items-center justify-center mb-5 hover:scale-105 transition-transform duration-300">
+                <svg viewBox="0 0 24 24" className="w-8 h-8 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  <path d="M9 11l2 2 4-4" strokeWidth="2" />
+                  <path d="m9 12 2 2 4-4" strokeWidth="2" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-stone-900 mb-2">Legal Expertise</h3>
+              <h3 className="text-lg font-bold text-stone-900 mb-2">Legally Secure</h3>
               <p className="text-sm font-semibold text-stone-500 leading-relaxed max-w-[220px]">
-                Drafted and reviewed by legal experts with 15+ years of experience.
+                All documents are handled as per legal norms and government regulations.
               </p>
               {/* Vertical Divider (Desktop Only) */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-20 bg-stone-100 hidden lg:block" />
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-20 bg-[#D49D0E]/20 hidden lg:block" />
             </div>
 
-            {/* Card 2: Hassle-Free */}
+            {/* Card 2: Expert Assistance */}
             <div className="relative flex flex-col items-center text-center px-6">
-              <div className="w-16 h-16 rounded-full bg-[#FAF7F0] flex items-center justify-center mb-5 shadow-sm border border-[#D49D0E]/10">
-                <svg viewBox="0 0 24 24" className="w-7 h-7 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              <div className="w-18 h-18 rounded-full bg-[#FFF7E8] flex items-center justify-center mb-5 hover:scale-105 transition-transform duration-300">
+                <svg viewBox="0 0 24 24" className="w-8 h-8 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" strokeWidth="2" />
+                  <line x1="16" y1="17" x2="8" y2="17" strokeWidth="2" />
+                  <circle cx="17" cy="18" r="2.5" className="fill-[#FAF7F0] stroke-[#D49D0E]" strokeWidth="1.5" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-stone-900 mb-2">Hassle-Free</h3>
+              <h3 className="text-lg font-bold text-stone-900 mb-2">Expert Assistance</h3>
               <p className="text-sm font-semibold text-stone-500 leading-relaxed max-w-[220px]">
-                We handle stamp duty calculation & registrar coordination.
+                Our experts guide you through every step of the process.
               </p>
               {/* Vertical Divider (Desktop Only) */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-20 bg-stone-100 hidden lg:block" />
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-20 bg-[#D49D0E]/20 hidden lg:block" />
             </div>
 
-            {/* Card 3: 100% Secure */}
+            {/* Card 3: Time Saving */}
             <div className="relative flex flex-col items-center text-center px-6">
-              <div className="w-16 h-16 rounded-full bg-[#FAF7F0] flex items-center justify-center mb-5 shadow-sm border border-[#D49D0E]/10">
-                <svg viewBox="0 0 24 24" className="w-7 h-7 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-18 h-18 rounded-full bg-[#FFF7E8] flex items-center justify-center mb-5 hover:scale-105 transition-transform duration-300">
+                <svg viewBox="0 0 24 24" className="w-8 h-8 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" strokeWidth="2" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-stone-900 mb-2">Time Saving</h3>
+              <p className="text-sm font-semibold text-stone-500 leading-relaxed max-w-[220px]">
+                Fast and efficient service with minimal paperwork from your side.
+              </p>
+              {/* Vertical Divider (Desktop Only) */}
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-20 bg-[#D49D0E]/20 hidden lg:block" />
+            </div>
+
+            {/* Card 4: Confidential & Safe */}
+            <div className="relative flex flex-col items-center text-center px-6">
+              <div className="w-18 h-18 rounded-full bg-[#FFF7E8] flex items-center justify-center mb-5 hover:scale-105 transition-transform duration-300">
+                <svg viewBox="0 0 24 24" className="w-8 h-8 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
                   <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
                   <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                  <circle cx="12" cy="16" r="1" fill="currentColor" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-stone-900 mb-2">100% Secure</h3>
+              <h3 className="text-lg font-bold text-stone-900 mb-2">Confidential & Safe</h3>
               <p className="text-sm font-semibold text-stone-500 leading-relaxed max-w-[220px]">
-                All documents are handled with maximum compliance.
-              </p>
-              {/* Vertical Divider (Desktop Only) */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-20 bg-stone-100 hidden lg:block" />
-            </div>
-
-            {/* Card 4: On-Time Execution */}
-            <div className="relative flex flex-col items-center text-center px-6">
-              <div className="w-16 h-16 rounded-full bg-[#FAF7F0] flex items-center justify-center mb-5 shadow-sm border border-[#D49D0E]/10">
-                <svg viewBox="0 0 24 24" className="w-7 h-7 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-stone-900 mb-2">On-Time</h3>
-              <p className="text-sm font-semibold text-stone-500 leading-relaxed max-w-[220px]">
-                Prompt writing, drafting, and final execution schedules.
+                Your information and documents are <strong className="font-bold">100%</strong> safe with us.
               </p>
             </div>
 
@@ -253,53 +252,40 @@ export default function Documents() {
       </section>
 
       {/* 3. Services List Section */}
-      <section id="services-list" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-stone-50/40">
+      <section id="services-list" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-[#FAF7F0]/20">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="flex flex-col items-center mb-16 text-center">
-            <h2 className="text-serif text-3xl sm:text-4xl font-bold tracking-tight text-[#281B10]">
-              Documents We Draft & Register
+            <h2 className="text-serif text-2.5xl font-bold tracking-tight text-[#D49D0E] uppercase">
+              OUR DOCUMENT SERVICES
             </h2>
-            <div className="flex items-center gap-1.5 mt-4">
-              <span className="h-[2px] w-8 bg-[#D49D0E]"></span>
-              <span className="w-2 h-2 rounded-full bg-[#D49D0E]"></span>
-              <span className="w-2 h-2 rounded-full bg-[#D49D0E]"></span>
-              <span className="h-[2px] w-8 bg-[#D49D0E]"></span>
+            <div className="flex items-center gap-1 mt-4">
+              <span className="h-[2.5px] w-12 bg-[#D49D0E] rounded-l-full"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-[#D49D0E]"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#D49D0E]"></span>
+              <span className="w-1 h-1 rounded-full bg-[#D49D0E]"></span>
             </div>
-            <p className="text-stone-500 font-semibold max-w-xl text-sm sm:text-base mt-4">
-              Our legal drafting experts provide tailored document writing services for all property transactions in compliance with local registration rules.
-            </p>
           </div>
 
-          {/* Grid Layout of Document Types */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Grid Layout of Document Types (5 Columns) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-12">
             {documentServices.map((service, index) => (
               <div 
                 key={index}
-                className="bg-white p-8 rounded-3xl border border-stone-200/40 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col group"
+                className="bg-[#FFFDF9]/60 border border-[#D49D0E]/10 p-6 rounded-[2rem] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center group"
               >
-                {/* Icon wrapper badge */}
-                <div className="w-14 h-14 rounded-2xl bg-[#E5A900] flex items-center justify-center mb-6 shadow-sm group-hover:scale-105 transition-transform duration-300">
+                {/* Icon Wrapper centered */}
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mb-5 group-hover:scale-105 transition-transform duration-300">
                   {service.icon}
                 </div>
 
-                <h3 className="text-serif text-xl font-bold text-[#281B10] mb-3 group-hover:text-[#D49D0E] transition-colors">
+                <h3 className="text-base font-bold text-stone-900 mb-3 tracking-tight">
                   {service.title}
                 </h3>
                 
-                <p className="text-xs sm:text-sm font-semibold text-stone-500 leading-relaxed flex-grow">
+                <p className="text-xs font-semibold text-stone-500 leading-relaxed flex-grow">
                   {service.desc}
                 </p>
-
-                <a 
-                  href="#contact" 
-                  className="flex items-center gap-1 text-xs font-bold text-[#D49D0E] mt-6 tracking-wider uppercase hover:text-[#B5820C]"
-                >
-                  <span>Request Draft</span>
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
               </div>
             ))}
           </div>
