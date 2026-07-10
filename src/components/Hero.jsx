@@ -1,5 +1,5 @@
 import React from 'react';
-import luxuryVilla from '../assets/herobg.png';
+import luxuryVilla from '../assets/herobg1.png';
 
 export default function Hero() {
   return (
