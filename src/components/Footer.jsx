@@ -1,23 +1,19 @@
 import React from 'react';
 import logoSymbol from '../assets/logo1.png';
+import footerImg from '../assets/footer.png';
 
 export default function Footer() {
   return (
     <footer className="w-full relative overflow-hidden">
       
       {/* 1. Top CTA Banner (Bright Gold Gradient) */}
-      <div className="w-full bg-gradient-to-r from-[#F5BC04] via-[#F4B400] to-[#E5A900] relative py-10 md:py-12 px-4 sm:px-6 lg:px-8 border-b border-stone-200/20 z-10 shadow-inner">
-        {/* City Skyscraper Vector Silhouette */}
-        <svg className="absolute left-6 bottom-0 h-[85%] w-auto text-[#23190E]/8 pointer-events-none hidden md:block" viewBox="0 0 300 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
-          <rect x="10" y="40" width="16" height="60" rx="1" />
-          <rect x="30" y="20" width="20" height="80" rx="1" />
-          <rect x="54" y="5" width="22" height="95" rx="1" />
-          <rect x="80" y="35" width="18" height="65" rx="1" />
-          <rect x="102" y="50" width="14" height="50" rx="1" />
-          <rect x="120" y="15" width="24" height="85" rx="1" />
-          <rect x="148" y="30" width="20" height="70" rx="1" />
-          <rect x="172" y="45" width="16" height="55" rx="1" />
-        </svg>
+      <div className="w-full bg-gradient-to-r from-[#F5BC04] via-[#F4B400] to-[#E5A900] relative py-4 md:py-5 px-4 sm:px-6 lg:px-8 border-b border-stone-200/20 z-10 shadow-inner">
+        {/* City Skyscraper Brand Image */}
+        <img
+          src={footerImg}
+          alt="City Skyline"
+          className="absolute left-6 bottom-0 h-full w-auto object-contain pointer-events-none hidden md:block mix-blend-multiply opacity-40"
+        />
 
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-20">
           {/* CTA Text */}
@@ -35,7 +31,7 @@ export default function Footer() {
             {/* Call Now Button */}
             <a
               href="tel:+911234567890"
-              className="flex items-center gap-2.5 bg-white text-[#23190E] hover:bg-stone-50 active:scale-95 px-6 sm:px-8 py-3.5 rounded-xl font-extrabold text-sm tracking-wide shadow-md transition-all duration-300"
+              className="flex items-center gap-2.5 bg-white text-[#23190E] hover:bg-stone-50 active:scale-95 px-6 sm:px-8 py-3 rounded-xl font-extrabold text-sm tracking-wide shadow-md transition-all duration-300"
             >
               <svg viewBox="0 0 24 24" className="w-5 h-5 text-[#F5BC04]" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 00-1.02.24l-2.2 2.2a15.1 15.1 0 01-6.59-6.59l2.2-2.2a1 1 0 00.25-1.02A11.36 11.36 0 008.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z" />
@@ -50,11 +46,10 @@ export default function Footer() {
               href="https://wa.me/911234567890"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2.5 bg-white text-[#23190E] hover:bg-stone-50 active:scale-95 px-6 sm:px-8 py-3.5 rounded-xl font-extrabold text-sm tracking-wide shadow-md transition-all duration-300"
+              className="flex items-center gap-2.5 bg-white text-[#23190E] hover:bg-stone-50 active:scale-95 px-6 sm:px-8 py-3 rounded-xl font-extrabold text-sm tracking-wide shadow-md transition-all duration-300"
             >
-              <svg className="w-5 h-5 text-[#25D366] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.458L0 24zm6.59-4.846c1.666.988 3.536 1.509 5.44 1.51h.005c5.847 0 10.605-4.754 10.608-10.604.002-2.834-1.1-5.5-3.103-7.501C17.098 4.557 14.437 3.452 11.603 3.45c-5.85 0-10.609 4.756-10.612 10.606-.001 2.01.524 3.973 1.523 5.724L1.353 22.048l2.42-.635.031.018-.007.015c1.62.962 3.477 1.47 5.372 1.472h.005l.006-.002z" />
-                <path d="M17.472 14.382c-.32-.16-1.89-.93-2.185-1.04-.294-.11-.51-.16-.723.16-.213.32-.823.16-.823.16l-.213.32-.475-.24c-.452-.226-1.5-.55-2.863-1.76-1.06-.946-1.776-2.115-1.984-2.472-.208-.358-.022-.55.156-.728.16-.16.32-.32.48-.48.16-.16.213-.27.32-.48.11-.21.05-.4-.03-.56-.08-.16-.723-1.74-.99-2.39-.26-.63-.52-.54-.723-.55-.186-.01-.4-.01-.61-.01-.21 0-.55.08-.84.4-.293.32-1.12 1.1-1.12 2.68s1.15 3.12 1.3 3.32c.16.2 2.26 3.45 5.48 4.84.77.33 1.37.53 1.84.68.77.24 1.47.21 2.03.13.62-.09 1.89-.77 2.15-1.48.26-.71.26-1.32.18-1.44-.08-.12-.29-.18-.61-.34z" />
+              <svg className="w-5 h-5 text-[#25D366] fill-current" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.7-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
               </svg>
               <span>WhatsApp Us</span>
             </a>
@@ -63,7 +58,7 @@ export default function Footer() {
       </div>
 
       {/* 2. Bottom Links Bar (Solid Gold Background) */}
-      <div className="w-full bg-[#D29F13] py-14 px-4 sm:px-6 lg:px-8 text-[#23190E] z-10">
+      <div className="w-full bg-[#D29F13] py-8 md:py-10 px-4 sm:px-6 lg:px-8 text-[#23190E] z-10">
         <div className="max-w-7xl mx-auto">
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0">
@@ -162,22 +157,20 @@ export default function Footer() {
               </h4>
               <ul className="space-y-4 text-sm font-semibold">
                 <li className="flex items-start gap-3 leading-snug">
-                  <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                    <circle cx="12" cy="10" r="3" />
+                  <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#23190E] flex-shrink-0 mt-0.5 fill-current" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                   </svg>
                   <span>123, Anna Salai, Pondicherry - 605001</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#23190E] flex-shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.56 11.56 0 018.82 4c0-.55-.45-1-1-1H4a1 1 0 00-1 1c0 9.39 7.61 17 17 17a1 1 0 001-1v-3.58c0-.56-.45-1.04-1-1.04z" />
                   </svg>
                   <span>+91 12345 67890</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
+                  <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#23190E] flex-shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                   </svg>
                   <span>info@thirumalaiproperties.com</span>
                 </li>
@@ -187,7 +180,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright & Legal Row */}
-          <div className="border-t border-[#23190E]/10 mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-semibold">
+          <div className="border-t border-[#23190E]/10 mt-8 pt-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-semibold">
             <span>
               © 2024 Thirumalai Properties. All Rights Reserved.
             </span>
