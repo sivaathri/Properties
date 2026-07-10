@@ -185,7 +185,7 @@ export default function Footer({ setActiveTab }) {
               </h4>
               <ul className="space-y-3.5 text-sm font-semibold leading-snug">
                 {[
-                  { text: 'Buying & Selling of Properties', tab: 'Properties', targetId: '#services' },
+                  { text: 'Buying & Selling of Properties', tab: 'Properties', targetId: null },
                   { text: 'Document Registration & Writing', tab: 'Documents', targetId: null },
                   { text: 'NRI Property Management', tab: 'NRI Property', targetId: null }
                 ].map((item, i) => (
