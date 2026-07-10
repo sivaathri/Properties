@@ -208,7 +208,7 @@ export default function NRI({ setActiveTab }) {
         </div>
 
         {/* Desktop Image Block */}
-        <div className="absolute right-0 top-0 bottom-0 w-[58%] xl:w-[56%] z-0 hidden lg:block overflow-hidden animate-scale-in">
+        <div className="absolute right-0 top-0 bottom-0 w-[58%] xl:w-[56%] z-0 hidden lg:block overflow-hidden animate-scale-in pointer-events-none">
           <div className="relative w-full h-full text-stone-700">
             <img
               src={nriImg}

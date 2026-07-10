@@ -88,14 +88,7 @@ export default function Properties({ setActiveTab }) {
               {/* Action Buttons Row */}
               <div className="flex flex-row items-center gap-4 sm:gap-5">
                 <a
-                  href="#contact"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const element = document.getElementById('contact');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
+                  
                   className="flex items-center justify-center gap-2.5 bg-[#D49D0E] hover:bg-[#B5820C] active:scale-98 text-white px-6 sm:px-8 py-3.5 rounded-lg font-bold text-sm tracking-wider shadow-sm hover:shadow-md transition-all duration-300"
                 >
                   <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 fill-current" xmlns="http://www.w3.org/2000/svg">
@@ -105,14 +98,8 @@ export default function Properties({ setActiveTab }) {
                 </a>
 
                 <a
-                  href="#contact"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const element = document.getElementById('contact');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
+                 
+                  
                   className="flex items-center justify-center gap-2.5 bg-white hover:bg-stone-50 active:scale-98 text-[#D49D0E] border-[1.5px] border-[#D49D0E] px-6 sm:px-8 py-3.5 rounded-lg font-bold text-sm tracking-wider shadow-sm transition-all duration-300"
                 >
                   <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +118,7 @@ export default function Properties({ setActiveTab }) {
         </div>
 
         {/* Desktop Image Block */}
-        <div className="absolute right-0 top-0 bottom-0 w-[58%] xl:w-[56%] z-0 hidden lg:block overflow-hidden animate-scale-in">
+        <div className="absolute right-0 top-0 bottom-0 w-[58%] xl:w-[56%] z-0 hidden lg:block overflow-hidden animate-scale-in pointer-events-none">
           <div className="relative w-full h-full text-stone-700">
             <img
               src={heroBg}

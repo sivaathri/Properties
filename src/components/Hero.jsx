@@ -128,7 +128,7 @@ export default function Hero({ setActiveTab }) {
       </div>
 
       {/* Desktop Image Block (Aligned top-0 bottom-0 to cover full section height) */}
-      <div className="absolute right-0 top-0 bottom-0 w-[52%] xl:w-[50%] z-0 hidden lg:block overflow-hidden animate-scale-in">
+      <div className="absolute right-0 top-0 bottom-0 w-[52%] xl:w-[50%] z-0 hidden lg:block overflow-hidden animate-scale-in pointer-events-none">
         <div className="relative w-full h-full text-stone-700">
           {/* Villa Photo */}
           <img
