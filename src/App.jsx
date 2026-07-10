@@ -9,6 +9,7 @@ import Properties from './components/Properties'
 import Documents from './components/Documents'
 import NRI from './components/NRI'
 import AboutUs from './components/AboutUs'
+import Contact from './components/Contact'
 import './App.css'
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
           <NRI />
         ) : activeTab === 'About Us' ? (
           <AboutUs />
+        ) : activeTab === 'Contact' ? (
+          <Contact />
         ) : (
           <>
             <Hero />

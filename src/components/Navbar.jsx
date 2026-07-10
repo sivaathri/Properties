@@ -10,15 +10,8 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
 
   const handleNavClick = (e, name) => {
     e.preventDefault();
-    if (name === 'Contact') {
-      const element = document.querySelector('#contact');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    } else {
-      setActiveTab(name);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    setActiveTab(name);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const navItems = [

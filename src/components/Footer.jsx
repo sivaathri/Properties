@@ -27,15 +27,8 @@ export default function Footer({ setActiveTab }) {
   const handleLinkClick = (e, linkName) => {
     e.preventDefault();
     if (setActiveTab) {
-      if (linkName === 'Contact') {
-        const element = document.querySelector('#contact');
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      } else {
-        setActiveTab(linkName);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+      setActiveTab(linkName);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import aboutImg from '../assets/about_building.png';
+import aboutImg from '../assets/about.png';
 import storyImg from '../assets/about_story_living.png';
-import sketchImg from '../assets/about_house_sketch.png';
+import sketchImg from '../assets/about_house_sketch-Photoroom.png';
 
 export default function AboutUs() {
   return (
@@ -258,66 +258,6 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* 3.5. Why Choose Us? Horizontal Banner Section */}
-      <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-[#FAF7F0] border-t border-b border-[#D49D0E]/15 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
-            {/* Left Content Column */}
-            <div className="lg:col-span-5 flex flex-col items-start relative">
-              <span className="text-xs sm:text-sm font-bold tracking-[0.25em] text-[#D49D0E] uppercase">
-                WHY CHOOSE US?
-              </span>
-              <h2 className="font-serif text-2.5xl sm:text-3.5xl font-extrabold text-stone-900 tracking-tight leading-tight mt-3 mb-5 max-w-sm">
-                We Make Real Estate Simple & Stress-Free
-              </h2>
-              <p className="text-stone-500 font-semibold text-xs sm:text-sm leading-relaxed max-w-md">
-                From finding the perfect property to handling all the paperwork, we're here to make the entire process easy and hassle-free.
-              </p>
-            </div>
-
-            {/* Middle Vertical Divider Line (Desktop Only) */}
-            <div className="hidden lg:block lg:col-span-1 justify-self-center">
-              <div className="w-[1.25px] h-36 bg-[#D49D0E]/20"></div>
-            </div>
-
-            {/* Center Checklist Column */}
-            <div className="lg:col-span-3 flex flex-col gap-3.5">
-              {[
-                'Wide range of verified properties',
-                'End-to-end support',
-                'Expert guidance at every step',
-                'Hassle-free documentation',
-                'After-sales support'
-              ].map((bullet, idx) => (
-                <div key={idx} className="flex items-center gap-3.5">
-                  <div className="w-5.5 h-5.5 rounded-full bg-[#E5A900] flex items-center justify-center flex-shrink-0 text-white shadow-sm">
-                    <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current stroke-[3]" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
-                  <span className="text-xs sm:text-sm font-bold text-stone-700 leading-snug">
-                    {bullet}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            {/* Right Line-Art House Graphic Column */}
-            <div className="lg:col-span-3 flex justify-center lg:justify-end items-center relative">
-              <div className="w-full max-w-[260px] lg:max-w-none relative aspect-[4/3] mix-blend-multiply">
-                <img
-                  src={sketchImg}
-                  alt="Luxury Villa sketch illustration"
-                  className="w-full h-full object-contain filter contrast-125 saturate-50"
-                />
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
       {/* 4. Our Values Section */}
       <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-stone-50">
         <div className="max-w-7xl mx-auto">
@@ -427,6 +367,66 @@ export default function AboutUs() {
             <p className="text-stone-500 font-semibold text-xs sm:text-sm leading-relaxed max-w-2xl">
               Our experienced professionals are dedicated to providing the best real estate solutions with personalized service and expert advice.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 3.5. Why Choose Us? Horizontal Banner Section */}
+      <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-[#FAF7F0] border-t border-b border-[#D49D0E]/15 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            {/* Left Content Column */}
+            <div className="lg:col-span-5 flex flex-col items-start relative">
+              <span className="text-xs sm:text-sm font-bold tracking-[0.25em] text-[#D49D0E] uppercase">
+                WHY CHOOSE US?
+              </span>
+              <h2 className="font-serif text-2.5xl sm:text-3.5xl font-extrabold text-stone-900 tracking-tight leading-tight mt-3 mb-5 max-w-sm">
+                We Make Real Estate Simple & Stress-Free
+              </h2>
+              <p className="text-stone-500 font-semibold text-xs sm:text-sm leading-relaxed max-w-md">
+                From finding the perfect property to handling all the paperwork, we're here to make the entire process easy and hassle-free.
+              </p>
+            </div>
+
+            {/* Middle Vertical Divider Line (Desktop Only) */}
+            <div className="hidden lg:block lg:col-span-1 justify-self-center">
+              <div className="w-[1.25px] h-36 bg-[#D49D0E]/20"></div>
+            </div>
+
+            {/* Center Checklist Column */}
+            <div className="lg:col-span-3 flex flex-col gap-3.5">
+              {[
+                'Wide range of verified properties',
+                'End-to-end support',
+                'Expert guidance at every step',
+                'Hassle-free documentation',
+                'After-sales support'
+              ].map((bullet, idx) => (
+                <div key={idx} className="flex items-center gap-3.5">
+                  <div className="w-5.5 h-5.5 rounded-full bg-[#E5A900] flex items-center justify-center flex-shrink-0 text-white shadow-sm">
+                    <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current stroke-[3]" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span className="text-xs sm:text-sm font-bold text-stone-700 leading-snug">
+                    {bullet}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Right Line-Art House Graphic Column */}
+            <div className="lg:col-span-3 flex justify-center lg:justify-end items-center relative">
+              <div className="w-full max-w-[260px] lg:max-w-none relative aspect-[4/3] mix-blend-multiply">
+                <img
+                  src={sketchImg}
+                  alt="Luxury Villa sketch illustration"
+                  className="w-full h-full object-contain filter contrast-125 saturate-50"
+                />
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
