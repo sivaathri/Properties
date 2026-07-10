@@ -51,7 +51,7 @@ export default function Footer({ setActiveTab }) {
 
   return (
     <footer id="contact" className="w-full relative overflow-hidden">
-      
+
       {/* 1. Top CTA Banner (Bright Gold Gradient) */}
       <div className="w-full bg-gradient-to-r from-[#F5BC04] via-[#F4B400] to-[#E5A900] relative py-4 md:py-5 px-4 sm:px-6 lg:px-8 border-b border-stone-200/20 z-10 shadow-inner">
         {/* City Skyscraper Brand Image */}
@@ -64,7 +64,7 @@ export default function Footer({ setActiveTab }) {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-20">
           {/* CTA Text */}
           <div className="text-center md:text-left md:pl-28 lg:pl-36 xl:pl-48">
-           
+
             <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#23190E] mt-1 leading-tight">
               We're Here to Help You!
             </h3>
@@ -104,9 +104,9 @@ export default function Footer({ setActiveTab }) {
       {/* 2. Bottom Links Bar (Solid Gold Background) */}
       <div className="w-full bg-[#D29F13] py-8 md:py-10 px-4 sm:px-6 lg:px-8 text-[#23190E] z-10">
         <div className="max-w-7xl mx-auto">
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0">
-            
+
             {/* Column 1: Brand Logo & Socials */}
             <div className="flex flex-col items-start md:pr-4 lg:pr-8 md:border-r lg:border-r border-[#23190E]/10">
               <div className="flex items-center gap-3 select-none mb-4">
@@ -127,7 +127,7 @@ export default function Footer({ setActiveTab }) {
               <p className="text-xs sm:text-sm font-semibold text-[#23190E] mb-6 leading-relaxed max-w-[280px]">
                 Your Trusted Partner in Real Estate & Documentation Services.
               </p>
-              
+
               {/* Social Icon Rings */}
               <div className="flex items-center gap-3.5">
                 {[
@@ -164,7 +164,7 @@ export default function Footer({ setActiveTab }) {
                 Quick Links
               </h4>
               <ul className="space-y-3.5 text-sm font-semibold">
-                {['Home', 'Properties', 'Documents', 'NRI Property','About Us', 'Contact'].map((link) => (
+                {['Home', 'Properties', 'Documents', 'NRI Property', 'About Us', 'Contact'].map((link) => (
                   <li key={link}>
                     <a
                       href={`#${link.toLowerCase().replace(' ', '-')}`}
@@ -190,8 +190,8 @@ export default function Footer({ setActiveTab }) {
                   { text: 'NRI Property Management', tab: 'NRI Property', targetId: null }
                 ].map((item, i) => (
                   <li key={i}>
-                    <a 
-                      href="#" 
+                    <a
+                      href="#"
                       onClick={(e) => handleServiceClick(e, item.tab, item.targetId)}
                       className="hover:text-white transition-all duration-300"
                     >
@@ -218,7 +218,7 @@ export default function Footer({ setActiveTab }) {
                   <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#23190E] flex-shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.56 11.56 0 018.82 4c0-.55-.45-1-1-1H4a1 1 0 00-1 1c0 9.39 7.61 17 17 17a1 1 0 001-1v-3.58c0-.56-.45-1.04-1-1.04z" />
                   </svg>
-                  <span>+91 12345 67890</span>
+                  <span> +91 96556 11234</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#23190E] flex-shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg">
@@ -236,7 +236,7 @@ export default function Footer({ setActiveTab }) {
             <span>
               © 2026 Pondy IT Solutions.
             </span>
-           
+
           </div>
 
         </div>

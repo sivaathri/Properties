@@ -57,8 +57,8 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.name)}
                   className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-all duration-300 py-2 outline-none focus:outline-none ${activeTab === item.name
-                      ? 'text-brand-yellow'
-                      : 'text-stone-700 hover:text-brand-gold'
+                    ? 'text-brand-yellow'
+                    : 'text-stone-700 hover:text-brand-gold'
                     }`}
                 >
                   {item.name}
@@ -93,7 +93,7 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
                 <path d="M14 6.5c1.5 0 3 1.5 3 3" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
                 <path d="M14 3.5c3.2 0 6 2.8 6 6" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
               </svg>
-              <span>+91 12345 67890</span>
+              <span> +91 96556 11234</span>
             </a>
           </div>
 
@@ -133,8 +133,8 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
                 setIsOpen(false);
               }}
               className={`block px-4 py-3 rounded-lg text-base font-semibold transition-all outline-none focus:outline-none ${activeTab === item.name
-                  ? 'bg-amber-50 text-brand-yellow font-bold'
-                  : 'text-stone-700 hover:bg-stone-50 hover:text-brand-gold'
+                ? 'bg-amber-50 text-brand-yellow font-bold'
+                : 'text-stone-700 hover:bg-stone-50 hover:text-brand-gold'
                 }`}
             >
               {item.name}
@@ -150,7 +150,7 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
                 <path d="M14 6.5c1.5 0 3 1.5 3 3" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
                 <path d="M14 3.5c3.2 0 6 2.8 6 6" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
               </svg>
-              <span>+91 12345 67890</span>
+              <span> +91 96556 11234</span>
             </a>
           </div>
         </div>
