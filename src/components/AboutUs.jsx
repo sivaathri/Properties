@@ -1,6 +1,7 @@
 import React from 'react';
 import aboutImg from '../assets/about_building.png';
 import storyImg from '../assets/about_story_living.png';
+import sketchImg from '../assets/about_house_sketch.png';
 
 export default function AboutUs() {
   return (
@@ -253,6 +254,179 @@ export default function AboutUs() {
 
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* 3.5. Why Choose Us? Horizontal Banner Section */}
+      <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-[#FAF7F0] border-t border-b border-[#D49D0E]/15 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            {/* Left Content Column */}
+            <div className="lg:col-span-5 flex flex-col items-start relative">
+              <span className="text-xs sm:text-sm font-bold tracking-[0.25em] text-[#D49D0E] uppercase">
+                WHY CHOOSE US?
+              </span>
+              <h2 className="font-serif text-2.5xl sm:text-3.5xl font-extrabold text-stone-900 tracking-tight leading-tight mt-3 mb-5 max-w-sm">
+                We Make Real Estate Simple & Stress-Free
+              </h2>
+              <p className="text-stone-500 font-semibold text-xs sm:text-sm leading-relaxed max-w-md">
+                From finding the perfect property to handling all the paperwork, we're here to make the entire process easy and hassle-free.
+              </p>
+            </div>
+
+            {/* Middle Vertical Divider Line (Desktop Only) */}
+            <div className="hidden lg:block lg:col-span-1 justify-self-center">
+              <div className="w-[1.25px] h-36 bg-[#D49D0E]/20"></div>
+            </div>
+
+            {/* Center Checklist Column */}
+            <div className="lg:col-span-3 flex flex-col gap-3.5">
+              {[
+                'Wide range of verified properties',
+                'End-to-end support',
+                'Expert guidance at every step',
+                'Hassle-free documentation',
+                'After-sales support'
+              ].map((bullet, idx) => (
+                <div key={idx} className="flex items-center gap-3.5">
+                  <div className="w-5.5 h-5.5 rounded-full bg-[#E5A900] flex items-center justify-center flex-shrink-0 text-white shadow-sm">
+                    <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current stroke-[3]" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span className="text-xs sm:text-sm font-bold text-stone-700 leading-snug">
+                    {bullet}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Right Line-Art House Graphic Column */}
+            <div className="lg:col-span-3 flex justify-center lg:justify-end items-center relative">
+              <div className="w-full max-w-[260px] lg:max-w-none relative aspect-[4/3] mix-blend-multiply">
+                <img
+                  src={sketchImg}
+                  alt="Luxury Villa sketch illustration"
+                  className="w-full h-full object-contain filter contrast-125 saturate-50"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Our Values Section */}
+      <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-stone-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-[#FFFDF9]/60 border border-[#D49D0E]/10 rounded-[2rem] p-8 md:p-12 shadow-sm">
+            {/* Section Header */}
+            <div className="flex flex-col items-center mb-12 text-center">
+              <h2 className="text-serif text-2xl font-bold tracking-tight text-[#D49D0E] uppercase">
+                OUR VALUES
+              </h2>
+              <div className="flex items-center gap-1 mt-4">
+                <span className="h-[2.5px] w-12 bg-[#D49D0E] rounded-l-full"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-[#D49D0E]"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#D49D0E]"></span>
+                <span className="w-1 h-1 rounded-full bg-[#D49D0E]"></span>
+              </div>
+            </div>
+
+            {/* Values 4-Column Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              
+              {/* Value 1: Trust */}
+              <div className="relative flex flex-col items-center text-center px-4">
+                <div className="mb-5 text-[#D49D0E] hover:scale-105 transition-transform duration-300">
+                  <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
+                </div>
+                <h3 className="text-base font-bold text-stone-900 mb-2">Trust</h3>
+                <p className="text-xs font-semibold text-stone-500 leading-relaxed max-w-[200px]">
+                  We believe in earning trust through our actions.
+                </p>
+                {/* Vertical Divider (Desktop Only) */}
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-16 bg-[#D49D0E]/20 hidden lg:block" />
+              </div>
+
+              {/* Value 2: Commitment */}
+              <div className="relative flex flex-col items-center text-center px-4">
+                <div className="mb-5 text-[#D49D0E] hover:scale-105 transition-transform duration-300">
+                  <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="12" cy="12" r="6" />
+                    <circle cx="12" cy="12" r="2" />
+                  </svg>
+                </div>
+                <h3 className="text-base font-bold text-stone-900 mb-2">Commitment</h3>
+                <p className="text-xs font-semibold text-stone-500 leading-relaxed max-w-[200px]">
+                  We are committed to our clients and their goals.
+                </p>
+                {/* Vertical Divider (Desktop Only) */}
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-16 bg-[#D49D0E]/20 hidden lg:block" />
+              </div>
+
+              {/* Value 3: Transparency */}
+              <div className="relative flex flex-col items-center text-center px-4">
+                <div className="mb-5 text-[#D49D0E] hover:scale-105 transition-transform duration-300">
+                  <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <polyline points="9 11 11 13 15 9" strokeWidth="2" />
+                  </svg>
+                </div>
+                <h3 className="text-base font-bold text-stone-900 mb-2">Transparency</h3>
+                <p className="text-xs font-semibold text-stone-500 leading-relaxed max-w-[200px]">
+                  Clear communication and honest guidance.
+                </p>
+                {/* Vertical Divider (Desktop Only) */}
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-16 bg-[#D49D0E]/20 hidden lg:block" />
+              </div>
+
+              {/* Value 4: Results */}
+              <div className="relative flex flex-col items-center text-center px-4">
+                <div className="mb-5 text-[#D49D0E] hover:scale-105 transition-transform duration-300">
+                  <svg viewBox="0 0 24 24" className="w-10 h-10 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="14" width="4" height="6" rx="1" />
+                    <rect x="10" y="8" width="4" height="12" rx="1" />
+                    <rect x="17" y="3" width="4" height="17" rx="1" />
+                    <path d="M5 16l6-6 6-4 4 4" strokeWidth="1.5" />
+                  </svg>
+                </div>
+                <h3 className="text-base font-bold text-stone-900 mb-2">Results</h3>
+                <p className="text-xs font-semibold text-stone-500 leading-relaxed max-w-[200px]">
+                  We focus on delivering the best possible outcomes.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Meet Our Team Section */}
+      <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-stone-50">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="flex flex-col items-center mb-16 text-center">
+            <span className="text-xs sm:text-sm font-bold tracking-[0.25em] text-[#D49D0E] uppercase mb-3">
+              MEET OUR TEAM
+            </span>
+            <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight leading-tight">
+              Experts Who Care
+            </h2>
+            <div className="flex items-center gap-1 mt-4 mb-6">
+              <span className="h-[2.5px] w-12 bg-[#D49D0E] rounded-l-full"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-[#D49D0E]"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#D49D0E]"></span>
+              <span className="w-1 h-1 rounded-full bg-[#D49D0E]"></span>
+            </div>
+            <p className="text-stone-500 font-semibold text-xs sm:text-sm leading-relaxed max-w-2xl">
+              Our experienced professionals are dedicated to providing the best real estate solutions with personalized service and expert advice.
+            </p>
           </div>
         </div>
       </section>
