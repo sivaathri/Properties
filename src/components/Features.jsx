@@ -76,7 +76,7 @@ export default function Features() {
         </div>
       </div>
 
-      <div className="bg-[#FAF7F0] rounded-[2rem] py-12 px-6 sm:px-8 shadow-sm">
+      <div className="bg-[#FAF7F0] rounded-[2rem] py-8 px-6 sm:px-8 shadow-sm">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 items-start">
           {items.map((item, idx) => (
             <div 
@@ -100,7 +100,7 @@ export default function Features() {
 
               {/* Centered Short Vertical Divider Line */}
               {idx < 3 && (
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-9 bg-[#D49D0E]/20 hidden lg:block" />
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-6 bg-[#D49D0E]/20 hidden lg:block" />
               )}
             </div>
           ))}
@@ -108,7 +108,7 @@ export default function Features() {
       </div>
 
       {/* Full-width Gold Statistics Bar */}
-      <div className="bg-[#F5BC04] rounded-2xl md:rounded-[2rem] py-8 px-6 sm:px-10 mt-12 shadow-sm relative z-10">
+      <div className="bg-[#F5BC04] rounded-2xl md:rounded-[2rem] py-5 px-6 sm:px-10 mt-12 shadow-sm relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 items-center justify-between">
           
           {/* Stat 1: Happy Clients */}
