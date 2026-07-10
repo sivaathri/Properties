@@ -120,7 +120,7 @@ export default function Footer() {
                 Quick Links
               </h4>
               <ul className="space-y-3.5 text-sm font-semibold">
-                {['Home', 'Services', 'About Us', 'Why Us', 'Testimonials', 'Contact'].map((link) => (
+                {['Home', 'Properties', 'Document', 'NRI Property','About Us', 'Contact'].map((link) => (
                   <li key={link}>
                     <a href={`#${link.toLowerCase().replace(' ', '-')}`} className="hover:text-white transition-all duration-300">
                       {link}
@@ -182,13 +182,9 @@ export default function Footer() {
           {/* Copyright & Legal Row */}
           <div className="border-t border-[#23190E]/10 mt-8 pt-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-semibold">
             <span>
-              © 2024 Thirumalai Properties. All Rights Reserved.
+              © 2026 Pondy IT Solutions.
             </span>
-            <div className="flex items-center gap-4 text-xs">
-              <a href="#" className="hover:text-white transition-all duration-300">Privacy Policy</a>
-              <span className="text-[#23190E]/30">|</span>
-              <a href="#" className="hover:text-white transition-all duration-300">Terms & Conditions</a>
-            </div>
+           
           </div>
 
         </div>
