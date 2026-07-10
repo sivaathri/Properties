@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Properties from './components/Properties'
 import Documents from './components/Documents'
 import NRI from './components/NRI'
+import AboutUs from './components/AboutUs'
 import './App.css'
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
           <Documents />
         ) : activeTab === 'NRI Property' ? (
           <NRI />
+        ) : activeTab === 'About Us' ? (
+          <AboutUs />
         ) : (
           <>
             <Hero />

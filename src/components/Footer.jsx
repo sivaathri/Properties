@@ -27,15 +27,7 @@ export default function Footer({ setActiveTab }) {
   const handleLinkClick = (e, linkName) => {
     e.preventDefault();
     if (setActiveTab) {
-      if (linkName === 'About Us') {
-        setActiveTab('Home');
-        setTimeout(() => {
-          const element = document.querySelector('#about-us');
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }, 100);
-      } else if (linkName === 'Contact') {
+      if (linkName === 'Contact') {
         const element = document.querySelector('#contact');
         if (element) {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });

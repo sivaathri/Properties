@@ -10,15 +10,7 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
 
   const handleNavClick = (e, name) => {
     e.preventDefault();
-    if (name === 'About Us') {
-      setActiveTab('Home');
-      setTimeout(() => {
-        const element = document.querySelector('#about-us');
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 100);
-    } else if (name === 'Contact') {
+    if (name === 'Contact') {
       const element = document.querySelector('#contact');
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
