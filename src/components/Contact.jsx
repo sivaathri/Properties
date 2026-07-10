@@ -22,15 +22,15 @@ export default function Contact() {
 
   return (
     <div className="w-full bg-white flex flex-col">
-      
+
       {/* 1. Hero Section */}
       <section className="relative w-full bg-white overflow-hidden min-h-[460px] lg:min-h-[580px] flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 lg:py-20 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             {/* Left Content Area */}
             <div className="lg:col-span-5 flex flex-col items-start relative z-10 animate-fade-in-up">
-              
+
               {/* Category Tag */}
               <span className="text-xs sm:text-sm font-bold tracking-[0.25em] text-[#D49D0E] uppercase mb-4">
                 GET IN TOUCH
@@ -60,7 +60,7 @@ export default function Contact() {
 
               {/* Core Values Row (3 Columns) */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full pt-4 border-t border-stone-100">
-                
+
                 {/* Support */}
                 <div className="flex flex-col items-start text-left">
                   <div className="w-12 h-12 rounded-full bg-[#FFFDF9] border border-[#D49D0E]/20 flex items-center justify-center mb-3 text-[#D49D0E]">
@@ -120,18 +120,18 @@ export default function Contact() {
             />
             {/* Soft gradient fade overlay to merge with white background */}
             <div className="absolute inset-y-0 left-0 w-64 bg-gradient-to-r from-white via-white/70 to-transparent pointer-events-none"></div>
-            
+
             {/* Parallel sweeps with custom gold stroke overlay starting from x=150 */}
-            <svg 
-              className="absolute -bottom-[1px] -right-[1px] w-[calc(100%+2px)] h-[28%] pointer-events-none z-10" 
-              viewBox="0 0 800 280" 
-              preserveAspectRatio="none" 
-              fill="none" 
+            <svg
+              className="absolute -bottom-[1px] -right-[1px] w-[calc(100%+2px)] h-[28%] pointer-events-none z-10"
+              viewBox="0 0 800 280"
+              preserveAspectRatio="none"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               {/* White Bottom Wave Overlay */}
               <path d="M 150 280 C 350 280, 550 195, 810 30 L 810 295 L 150 295 Z" fill="white" />
-              
+
               {/* Gold Stroke Ribbon Overlay */}
               <path d="M 150 280 C 350 280, 550 195, 810 30" stroke="#F5BC04" strokeWidth="8" fill="none" strokeLinecap="round" />
             </svg>
@@ -143,10 +143,10 @@ export default function Contact() {
       <section className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-stone-50 relative z-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-            
+
             {/* Left Column: Get In Touch (5 Columns) */}
             <div className="lg:col-span-5 bg-[#FFFDF9]/60 border border-[#D49D0E]/10 rounded-[2rem] p-6 sm:p-10 shadow-sm flex flex-col items-start text-left">
-              
+
               {/* Title */}
               <h2 className="font-serif text-2xl font-extrabold text-stone-900 mb-1">Get In Touch</h2>
               <div className="w-10 h-[2px] bg-[#D49D0E] mb-6"></div>
@@ -161,7 +161,7 @@ export default function Contact() {
 
               {/* Info Items */}
               <ul className="space-y-6 w-full font-semibold">
-                
+
                 {/* Phone */}
                 <li className="flex items-center gap-4.5">
                   <div className="w-12 h-12 rounded-full bg-[#FAF7F0] border border-[#D49D0E]/10 flex items-center justify-center text-[#D49D0E] flex-shrink-0">
@@ -197,7 +197,7 @@ export default function Contact() {
                   </div>
                   <div className="flex flex-col">
                     <span className="text-[11px] font-extrabold text-stone-400 uppercase tracking-wider mb-0.5">Office Address</span>
-                    <span className="text-stone-800 text-sm font-extrabold leading-relaxed max-w-[280px]">No. 45, Kamarajar Salai, Puducherry - 605001, India</span>
+                    <span className="text-stone-800 text-sm font-extrabold leading-relaxed max-w-[280px]">No. 17 sakthi Nagar main road saram Puducherry - 605013</span>
                   </div>
                 </li>
 
@@ -223,7 +223,7 @@ export default function Contact() {
             <div className="lg:col-span-7 bg-[#FFFDF9]/60 border border-[#D49D0E]/10 rounded-[2rem] p-6 sm:p-10 shadow-sm">
               <h2 className="font-serif text-2xl font-extrabold text-stone-900 mb-1">Send Us a Message</h2>
               <div className="w-10 h-[2px] bg-[#D49D0E] mb-6"></div>
-              
+
               <p className="text-xs sm:text-sm font-semibold text-stone-500 mb-8 leading-relaxed">
                 Fill out the form below and our team will get back to you soon.
               </p>
@@ -243,24 +243,24 @@ export default function Contact() {
                     {/* Name */}
                     <div className="flex flex-col gap-2">
                       <label className="text-xs font-bold text-stone-700 tracking-wide">Your Name *</label>
-                      <input 
-                        type="text" 
+                      <input
+                        type="text"
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="Enter your full name" 
+                        placeholder="Enter your full name"
                         className="w-full bg-white border border-stone-200/80 px-4 py-3 rounded-xl text-stone-900 text-sm font-semibold focus:outline-none focus:border-[#D49D0E] placeholder:text-stone-300 transition-colors"
                       />
                     </div>
                     {/* Phone */}
                     <div className="flex flex-col gap-2">
                       <label className="text-xs font-bold text-stone-700 tracking-wide">Your Phone *</label>
-                      <input 
-                        type="tel" 
+                      <input
+                        type="tel"
                         required
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="Enter your phone number" 
+                        placeholder="Enter your phone number"
                         className="w-full bg-white border border-stone-200/80 px-4 py-3 rounded-xl text-stone-900 text-sm font-semibold focus:outline-none focus:border-[#D49D0E] placeholder:text-stone-300 transition-colors"
                       />
                     </div>
@@ -269,12 +269,12 @@ export default function Contact() {
                   {/* Email */}
                   <div className="flex flex-col gap-2">
                     <label className="text-xs font-bold text-stone-700 tracking-wide">Your Email *</label>
-                    <input 
-                      type="email" 
+                    <input
+                      type="email"
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="Enter your email address" 
+                      placeholder="Enter your email address"
                       className="w-full bg-white border border-stone-200/80 px-4 py-3 rounded-xl text-stone-900 text-sm font-semibold focus:outline-none focus:border-[#D49D0E] placeholder:text-stone-300 transition-colors"
                     />
                   </div>
@@ -282,12 +282,12 @@ export default function Contact() {
                   {/* Subject */}
                   <div className="flex flex-col gap-2">
                     <label className="text-xs font-bold text-stone-700 tracking-wide">Subject *</label>
-                    <input 
+                    <input
                       type="text"
                       required
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      placeholder="Enter subject" 
+                      placeholder="Enter subject"
                       className="w-full bg-white border border-stone-200/80 px-4 py-3 rounded-xl text-stone-900 text-sm font-semibold focus:outline-none focus:border-[#D49D0E] placeholder:text-stone-300 transition-colors"
                     />
                   </div>
@@ -295,19 +295,19 @@ export default function Contact() {
                   {/* Message */}
                   <div className="flex flex-col gap-2">
                     <label className="text-xs font-bold text-stone-700 tracking-wide">Your Message *</label>
-                    <textarea 
+                    <textarea
                       required
                       rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Type your message here..." 
+                      placeholder="Type your message here..."
                       className="w-full bg-white border border-stone-200/80 px-4 py-3 rounded-xl text-stone-900 text-sm font-semibold focus:outline-none focus:border-[#D49D0E] placeholder:text-stone-300 transition-colors resize-none"
                     />
                   </div>
 
                   {/* Submit Button & Info Note */}
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-2">
-                    <button 
+                    <button
                       type="submit"
                       className="bg-[#D49D0E] hover:bg-[#C08C0C] active:scale-95 text-white font-extrabold py-3.5 px-8 rounded-xl shadow-md transition-all duration-300 flex items-center justify-center gap-2 text-sm tracking-wide"
                     >
@@ -317,7 +317,7 @@ export default function Contact() {
                         <polygon points="22 2 15 22 11 13 2 9 22 2" />
                       </svg>
                     </button>
-                    
+
                     <div className="flex items-center gap-1.5 text-stone-400">
                       <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 text-stone-400 stroke-current stroke-[2] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -337,7 +337,7 @@ export default function Contact() {
       {/* 3. Other Ways to Connect Section */}
       <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-stone-50">
         <div className="max-w-7xl mx-auto">
-          
+
           {/* Section Header */}
           <div className="flex items-center justify-center gap-4 sm:gap-6 mb-12 text-center">
             <div className="hidden sm:flex items-center gap-1.5">
@@ -355,11 +355,11 @@ export default function Contact() {
 
           {/* Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            
+
             {/* Card 1: WhatsApp */}
-            <a 
-              href="https://wa.me/919514115556" 
-              target="_blank" 
+            <a
+              href="https://wa.me/919514115556"
+              target="_blank"
               rel="noopener noreferrer"
               className="bg-white border border-stone-100/80 hover:border-emerald-100 hover:shadow-md rounded-2xl p-6 flex items-center gap-4 transition-all duration-300 group"
             >
@@ -372,13 +372,13 @@ export default function Contact() {
               <div className="flex flex-col">
                 <span className="text-sm font-extrabold text-stone-900 group-hover:text-[#D49D0E] transition-colors">WhatsApp</span>
                 <span className="text-[11px] font-semibold text-stone-400 mt-0.5">Chat with us for quick assistance</span>
-                <span className="text-sm font-extrabold text-[#128C7E] mt-2 tracking-wide">95141 15556</span>
+                <span className="text-sm font-extrabold text-[#128C7E] mt-2 tracking-wide">96556 11234</span>
               </div>
             </a>
 
             {/* Card 2: Call Us */}
-            <a 
-              href="tel:+919655611234" 
+            <a
+              href="tel:+919655611234"
               className="bg-white border border-stone-100/80 hover:border-blue-100 hover:shadow-md rounded-2xl p-6 flex items-center gap-4 transition-all duration-300 group"
             >
               <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
@@ -394,8 +394,8 @@ export default function Contact() {
             </a>
 
             {/* Card 3: Email Us */}
-            <a 
-              href="mailto:thirumalaipropertiespy@gmail.com" 
+            <a
+              href="mailto:thirumalaipropertiespy@gmail.com"
               className="bg-white border border-stone-100/80 hover:border-purple-100 hover:shadow-md rounded-2xl p-6 flex items-center gap-4 transition-all duration-300 group"
             >
               <div className="w-14 h-14 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
@@ -406,14 +406,14 @@ export default function Contact() {
               <div className="flex flex-col max-w-[160px] sm:max-w-none">
                 <span className="text-sm font-extrabold text-stone-900 group-hover:text-[#D49D0E] transition-colors">Email Us</span>
                 <span className="text-[11px] font-semibold text-stone-400 mt-0.5">Drop us an email anytime</span>
-                <span className="text-xs font-extrabold text-[#673AB7] mt-2 truncate">thirumalaipropertiespy@gmail.com</span>
+                <span className="text-xs font-extrabold text-[#673AB7] mt-2 truncate">mail.thirumalaiproperties@gmail.com</span>
               </div>
             </a>
 
             {/* Card 4: Visit Office */}
-            <a 
-              href="https://maps.google.com/?q=No.+45,+Kamarajar+Salai,+Puducherry+-+605001" 
-              target="_blank" 
+            <a
+              href="https://maps.google.com/?q=No.+45,+Kamarajar+Salai,+Puducherry+-+605001"
+              target="_blank"
               rel="noopener noreferrer"
               className="bg-white border border-stone-100/80 hover:border-[#D49D0E]/30 hover:shadow-md rounded-2xl p-6 flex items-center gap-4 transition-all duration-300 group"
             >

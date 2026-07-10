@@ -133,7 +133,7 @@ export default function Footer({ setActiveTab }) {
                 {[
                   { icon: 'M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z', label: 'Facebook' },
                   { icon: 'M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z M17.5 6.5h.01', label: 'Instagram', isInsta: true },
-                 
+
                 ].map((social, i) => (
                   <a
                     key={i}
@@ -211,7 +211,7 @@ export default function Footer({ setActiveTab }) {
                   <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#23190E] flex-shrink-0 mt-0.5 fill-current" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                   </svg>
-                  <span>123, Anna Salai, Pondicherry - 605001</span>
+                  <span>No. 17 sakthi Nagar main road saram Puducherry - 605013</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#23190E] flex-shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg">
@@ -223,7 +223,7 @@ export default function Footer({ setActiveTab }) {
                   <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#23190E] flex-shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                   </svg>
-                  <span>info@thirumalaiproperties.com</span>
+                  <span>mail.thirumalaiproperties@gmail.com</span>
                 </li>
               </ul>
             </div>
