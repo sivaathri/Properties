@@ -23,19 +23,19 @@ function App() {
       {/* Main content area */}
       <main>
         {activeTab === 'Properties' ? (
-          <Properties />
+          <Properties setActiveTab={setActiveTab} />
         ) : activeTab === 'Documents' ? (
-          <Documents />
+          <Documents setActiveTab={setActiveTab} />
         ) : activeTab === 'NRI Property' ? (
-          <NRI />
+          <NRI setActiveTab={setActiveTab} />
         ) : activeTab === 'About Us' ? (
           <AboutUs />
         ) : activeTab === 'Contact' ? (
           <Contact />
         ) : (
           <>
-            <Hero />
-            <Services />
+            <Hero setActiveTab={setActiveTab} />
+            <Services setActiveTab={setActiveTab} />
             <Features />
             <Process />
           </>

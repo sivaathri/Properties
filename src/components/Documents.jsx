@@ -3,7 +3,7 @@ import docsImg from '../assets/service_documents.png';
 import footerImg from '../assets/footer.png';
 import aptImg from '../assets/tes.png';
 
-export default function Documents() {
+export default function Documents({ setActiveTab }) {
   const documentServices = [
     {
       title: 'Document Writing',
@@ -116,6 +116,13 @@ export default function Documents() {
                 
                 <a
                   href="#contact"
+                  onClick={(e) => {
+                    if (setActiveTab) {
+                      e.preventDefault();
+                      setActiveTab('Contact');
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                  }}
                   className="flex items-center justify-center gap-2.5 bg-white hover:bg-stone-50 active:scale-98 text-[#D49D0E] border-[1.5px] border-[#D49D0E] px-6 sm:px-8 py-3.5 rounded-lg font-bold text-sm tracking-wider shadow-sm transition-all duration-300"
                 >
                   <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
@@ -592,6 +599,13 @@ export default function Documents() {
             <div className="relative z-10 w-full md:w-auto flex justify-center">
               <a
                 href="#contact"
+                onClick={(e) => {
+                  if (setActiveTab) {
+                    e.preventDefault();
+                    setActiveTab('Contact');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                }}
                 className="bg-white hover:bg-stone-50 active:scale-95 text-[#8C5E01] font-extrabold py-3.5 px-7 rounded-xl flex items-center gap-2 shadow-md transition-all duration-300 w-full md:w-auto justify-center text-sm tracking-wide hover:shadow-lg"
               >
                 <span>Contact Us</span>

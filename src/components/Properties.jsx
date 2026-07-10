@@ -13,7 +13,7 @@ import agriImg from '../assets/agricultural_land.png';
 import footerImg from '../assets/footer.png';
 
 
-export default function Properties() {
+export default function Properties({ setActiveTab }) {
   const [filter, setFilter] = useState('all');
 
   const propertiesList = [
@@ -89,6 +89,13 @@ export default function Properties() {
               <div className="flex flex-row items-center gap-4 sm:gap-5">
                 <a
                   href="#contact"
+                  onClick={(e) => {
+                    if (setActiveTab) {
+                      e.preventDefault();
+                      setActiveTab('Contact');
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                  }}
                   className="flex items-center justify-center gap-2.5 bg-[#D49D0E] hover:bg-[#B5820C] active:scale-98 text-white px-6 sm:px-8 py-3.5 rounded-lg font-bold text-sm tracking-wider shadow-sm hover:shadow-md transition-all duration-300"
                 >
                   <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 fill-current" xmlns="http://www.w3.org/2000/svg">
@@ -99,6 +106,13 @@ export default function Properties() {
 
                 <a
                   href="#contact"
+                  onClick={(e) => {
+                    if (setActiveTab) {
+                      e.preventDefault();
+                      setActiveTab('Contact');
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                  }}
                   className="flex items-center justify-center gap-2.5 bg-white hover:bg-stone-50 active:scale-98 text-[#D49D0E] border-[1.5px] border-[#D49D0E] px-6 sm:px-8 py-3.5 rounded-lg font-bold text-sm tracking-wider shadow-sm transition-all duration-300"
                 >
                   <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
@@ -286,6 +300,13 @@ export default function Properties() {
                 </p>
                 <a
                   href="#contact"
+                  onClick={(e) => {
+                    if (setActiveTab) {
+                      e.preventDefault();
+                      setActiveTab('Contact');
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                  }}
                   className="flex items-center gap-2 bg-[#E5A900] hover:bg-[#C99100] active:scale-95 text-white px-5 py-2.5 rounded-xl font-bold text-xs tracking-wider transition-all duration-300 shadow-sm"
                 >
                   <span>Explore Buying</span>
@@ -320,6 +341,13 @@ export default function Properties() {
                 </p>
                 <a
                   href="#contact"
+                  onClick={(e) => {
+                    if (setActiveTab) {
+                      e.preventDefault();
+                      setActiveTab('Contact');
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                  }}
                   className="flex items-center gap-2 bg-[#E5A900] hover:bg-[#C99100] active:scale-95 text-white px-5 py-2.5 rounded-xl font-bold text-xs tracking-wider transition-all duration-300 shadow-sm"
                 >
                   <span>Explore Selling</span>
@@ -548,6 +576,13 @@ export default function Properties() {
 
             <a
               href="#contact"
+              onClick={(e) => {
+                if (setActiveTab) {
+                  e.preventDefault();
+                  setActiveTab('Contact');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
               className="flex items-center gap-2.5 bg-[#E5A900] hover:bg-[#C99100] active:scale-95 text-white px-5 py-2.5 rounded-xl font-bold text-xs tracking-wider transition-all duration-300 shadow-md hover:shadow-lg"
             >
               <span>Contact Us</span>

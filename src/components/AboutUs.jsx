@@ -13,7 +13,7 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             {/* Left Content Area */}
-            <div className="lg:col-span-5 flex flex-col items-start relative z-10">
+            <div className="lg:col-span-5 flex flex-col items-start relative z-10 animate-fade-in-up">
               
               {/* Category Tag */}
               <span className="text-xs sm:text-sm font-bold tracking-[0.25em] text-[#D49D0E] uppercase mb-4">
@@ -58,7 +58,7 @@ export default function AboutUs() {
         </div>
 
         {/* Right Desktop Image block with parallel sweeps */}
-        <div className="absolute right-0 top-0 bottom-0 w-[58%] xl:w-[56%] z-0 hidden lg:block overflow-hidden">
+        <div className="absolute right-0 top-0 bottom-0 w-[58%] xl:w-[56%] z-0 hidden lg:block overflow-hidden animate-scale-in">
           <div className="relative w-full h-full text-stone-700">
             <img
               src={aboutImg}

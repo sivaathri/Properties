@@ -1,7 +1,7 @@
 import React from 'react';
 import luxuryVilla from '../assets/herobg.png';
 
-export default function Hero() {
+export default function Hero({ setActiveTab }) {
   return (
     <section className="relative w-full overflow-hidden bg-white flex items-start pt-6 sm:pt-10 lg:pt-14">
       
@@ -40,6 +40,22 @@ export default function Hero() {
               {/* Explore Services */}
               <a
                 href="#services"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById('services');
+                  if (element) {
+                    const offset = 100; // Account for the sticky navbar height
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = element.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                      top: offsetPosition,
+                      behavior: 'smooth'
+                    });
+                  }
+                }}
                 className="group flex items-center justify-center gap-2 bg-brand-yellow hover:bg-[#E5B002] active:scale-98 text-brand-dark px-6 sm:px-8 py-4 sm:py-4.5 rounded-lg font-bold text-sm tracking-wider shadow-sm hover:shadow-md transition-all duration-300"
               >
                 Explore Services
@@ -51,6 +67,13 @@ export default function Hero() {
               {/* Contact Us */}
               <a
                 href="#contact"
+                onClick={(e) => {
+                  if (setActiveTab) {
+                    e.preventDefault();
+                    setActiveTab('Contact');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                }}
                 className="group flex items-center justify-center gap-2 bg-white hover:bg-stone-50 active:scale-98 text-brand-dark border-[1.5px] border-[#D49D0E] px-6 sm:px-8 py-4 sm:py-4.5 rounded-lg font-bold text-sm tracking-wider shadow-sm transition-all duration-300"
               >
                 Contact Us

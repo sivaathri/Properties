@@ -3,7 +3,7 @@ import buyingImg from '../assets/service_buying.png';
 import docsImg from '../assets/service_documents.png';
 import nriImg from '../assets/service_nri.png';
 
-export default function Services() {
+export default function Services({ setActiveTab }) {
   const servicesData = [
     {
       title: 'Buying & Selling of Properties',
@@ -22,6 +22,7 @@ export default function Services() {
         'Hassle-free Transactions',
       ],
       link: '#contact-buying',
+      tab: 'Properties',
     },
     {
       title: 'Document Registration & Writing',
@@ -42,6 +43,7 @@ export default function Services() {
         'Document Writing Services',
       ],
       link: '#contact-docs',
+      tab: 'Documents',
     },
     {
       title: 'NRI Property Management',
@@ -60,6 +62,7 @@ export default function Services() {
         'Power of Attorney Support',
       ],
       link: '#contact-nri',
+      tab: 'NRI Property',
     },
   ];
 
@@ -129,6 +132,13 @@ export default function Services() {
                 {/* Card Footer Link */}
                 <a 
                   href={service.link}
+                  onClick={(e) => {
+                    if (setActiveTab && service.tab) {
+                      e.preventDefault();
+                      setActiveTab(service.tab);
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                  }}
                   className="flex items-center justify-between mt-8 pt-5 border-t border-stone-100 text-[#281B10] hover:text-[#D49D0E] font-bold text-sm tracking-wider transition-colors duration-300"
                 >
                   <span>Learn More</span>
