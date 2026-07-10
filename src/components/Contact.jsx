@@ -171,7 +171,7 @@ export default function Contact() {
                   </div>
                   <div className="flex flex-col">
                     <span className="text-[11px] font-extrabold text-stone-400 uppercase tracking-wider mb-0.5">Phone</span>
-                    <span className="text-stone-800 text-sm font-extrabold leading-tight">95141 15556 | 96556 11234</span>
+                    <span className="text-stone-800 text-sm font-extrabold leading-tight"> 96556 11234</span>
                   </div>
                 </li>
 
