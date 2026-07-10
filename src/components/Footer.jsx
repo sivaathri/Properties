@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logoSymbol from '../assets/logo1.png';
 import footerImg from '../assets/footer.png';
 
-export default function Footer() {
+export default function Footer({ setActiveTab }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -143,7 +143,15 @@ export default function Footer() {
               <ul className="space-y-3.5 text-sm font-semibold">
                 {['Home', 'Properties', 'Document', 'NRI Property','About Us', 'Contact'].map((link) => (
                   <li key={link}>
-                    <a href={`#${link.toLowerCase().replace(' ', '-')}`} className="hover:text-white transition-all duration-300">
+                    <a
+                      href={`#${link.toLowerCase().replace(' ', '-')}`}
+                      onClick={() => {
+                        if (setActiveTab) {
+                          setActiveTab(link);
+                        }
+                      }}
+                      className="hover:text-white transition-all duration-300"
+                    >
                       {link}
                     </a>
                   </li>

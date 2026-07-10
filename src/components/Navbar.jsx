@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import logoSymbol from '../assets/logo2.png';
 
-export default function Navbar() {
+export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsSetActiveTab }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState('Home');
+  const [localActiveTab, setLocalActiveTab] = useState('Home');
+
+  const activeTab = propsActiveTab !== undefined ? propsActiveTab : localActiveTab;
+  const setActiveTab = propsSetActiveTab !== undefined ? propsSetActiveTab : setLocalActiveTab;
 
   const navItems = [
     { name: 'Home', href: '#home', hasDropdown: false },
-    { name: 'Properties', href: '#services', hasDropdown: false },
-    { name: 'Document ', href: '#why-us', hasDropdown: false },
-    { name: 'NRI Property', href: '#testimonials', hasDropdown: false },
+    { name: 'Properties', href: '#Properties', hasDropdown: false },
+    { name: 'Document ', href: '#Document', hasDropdown: false },
+    { name: 'NRI Property', href: '#NRI-Property', hasDropdown: false },
        { name: 'About Us', href: '#about-us', hasDropdown: false },
     { name: 'Contact', href: '#contact', hasDropdown: false },
   ];
