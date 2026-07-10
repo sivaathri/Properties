@@ -293,6 +293,136 @@ export default function Documents() {
         </div>
       </section>
 
+      {/* 3.5. Our Process Section */}
+      <section className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="flex flex-col items-center mb-16 text-center">
+            <h2 className="text-serif text-2.5xl font-bold tracking-tight text-[#D49D0E] uppercase">
+              OUR PROCESS
+            </h2>
+            <div className="flex items-center gap-1 mt-4">
+              <span className="h-[2.5px] w-12 bg-[#D49D0E] rounded-l-full"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-[#D49D0E]"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#D49D0E]"></span>
+              <span className="w-1 h-1 rounded-full bg-[#D49D0E]"></span>
+            </div>
+          </div>
+
+          {/* Process Timeline Flow Grid */}
+          <div className="relative mt-12">
+            {/* Horizontal timeline connector line (Desktop Only) */}
+            <div className="absolute top-4 left-[10%] right-[10%] h-[1.5px] bg-[#D49D0E]/20 hidden lg:block z-0"></div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 relative z-10">
+              
+              {/* Step 1 */}
+              <div className="flex flex-col items-center group">
+                <div className="w-8 h-8 rounded-full bg-[#E5A900] text-white flex items-center justify-center font-bold text-sm shadow-md mb-6 relative z-20">
+                  1
+                </div>
+                <div className="bg-[#FFFDF9]/60 border border-[#D49D0E]/10 p-6 rounded-[2rem] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center w-full min-h-[220px]">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 text-[#5C4033] group-hover:scale-105 transition-transform duration-300">
+                    <svg viewBox="0 0 24 24" className="w-8 h-8 text-[#5C4033] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                  </div>
+                  <h3 className="text-base font-bold text-stone-900 mb-2">Consultation</h3>
+                  <p className="text-xs font-semibold text-stone-500 leading-relaxed">
+                    Share your requirements with our experts.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="flex flex-col items-center group">
+                <div className="w-8 h-8 rounded-full bg-[#E5A900] text-white flex items-center justify-center font-bold text-sm shadow-md mb-6 relative z-20">
+                  2
+                </div>
+                <div className="bg-[#FFFDF9]/60 border border-[#D49D0E]/10 p-6 rounded-[2rem] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center w-full min-h-[220px]">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 text-[#5C4033] group-hover:scale-105 transition-transform duration-300">
+                    <svg viewBox="0 0 24 24" className="w-8 h-8 text-[#5C4033] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                      <polyline points="14 2 14 8 20 8" />
+                      <line x1="9" y1="12" x2="13" y2="12" strokeWidth="1.5" />
+                      <line x1="9" y1="16" x2="11" y2="16" strokeWidth="1.5" />
+                      <path d="M16 11.5l1.5-1.5a1.06 1.06 0 0 1 1.5 0v0a1.06 1.06 0 0 1 0 1.5l-1.5 1.5M16 11.5L12.5 15H11v-1.5l3.5-3.5" strokeWidth="1.5" />
+                    </svg>
+                  </div>
+                  <h3 className="text-base font-bold text-stone-900 mb-2">Document Preparation</h3>
+                  <p className="text-xs font-semibold text-stone-500 leading-relaxed">
+                    We draft and verify the documents.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="flex flex-col items-center group">
+                <div className="w-8 h-8 rounded-full bg-[#E5A900] text-white flex items-center justify-center font-bold text-sm shadow-md mb-6 relative z-20">
+                  3
+                </div>
+                <div className="bg-[#FFFDF9]/60 border border-[#D49D0E]/10 p-6 rounded-[2rem] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center w-full min-h-[220px]">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 text-[#5C4033] group-hover:scale-105 transition-transform duration-300">
+                    <svg viewBox="0 0 24 24" className="w-8 h-8 text-[#5C4033] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="6" y="3" width="12" height="18" rx="2" />
+                      <path d="M9 7h6M9 11h6M9 15h3" strokeWidth="1.5" />
+                      <path d="M14 15l2 2 3-3" strokeWidth="1.5" />
+                    </svg>
+                  </div>
+                  <h3 className="text-base font-bold text-stone-900 mb-2">Review & Approval</h3>
+                  <p className="text-xs font-semibold text-stone-500 leading-relaxed">
+                    You review and approve the documents.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="flex flex-col items-center group">
+                <div className="w-8 h-8 rounded-full bg-[#E5A900] text-white flex items-center justify-center font-bold text-sm shadow-md mb-6 relative z-20">
+                  4
+                </div>
+                <div className="bg-[#FFFDF9]/60 border border-[#D49D0E]/10 p-6 rounded-[2rem] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center w-full min-h-[220px]">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 text-[#5C4033] group-hover:scale-105 transition-transform duration-300">
+                    <svg viewBox="0 0 24 24" className="w-8 h-8 text-[#5C4033] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 22a7 7 0 0 0 7-7h-14a7 7 0 0 0 7 7z" />
+                      <path d="M12 15V3" strokeWidth="1.5" />
+                      <path d="M8 3h8" strokeWidth="1.5" />
+                    </svg>
+                  </div>
+                  <h3 className="text-base font-bold text-stone-900 mb-2">Registration</h3>
+                  <p className="text-xs font-semibold text-stone-500 leading-relaxed">
+                    We handle the registration process at the office.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 5 */}
+              <div className="flex flex-col items-center group">
+                <div className="w-8 h-8 rounded-full bg-[#E5A900] text-white flex items-center justify-center font-bold text-sm shadow-md mb-6 relative z-20">
+                  5
+                </div>
+                <div className="bg-[#FFFDF9]/60 border border-[#D49D0E]/10 p-6 rounded-[2rem] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center w-full min-h-[220px]">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 text-[#5C4033] group-hover:scale-105 transition-transform duration-300">
+                    <svg viewBox="0 0 24 24" className="w-8 h-8 text-[#5C4033] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <path d="m9 12 2 2 4-4" strokeWidth="2" />
+                    </svg>
+                  </div>
+                  <h3 className="text-base font-bold text-stone-900 mb-2">Delivery</h3>
+                  <p className="text-xs font-semibold text-stone-500 leading-relaxed">
+                    Registered documents delivered to you safely.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 4. Statistics Bar (Placed above the Ready to Buy or Sell CTA Banner) */}
       <div className="max-w-5xl mx-auto w-full px-4 mb-4 mt-16">
         <div className="w-full bg-[#D29F13] rounded-2xl md:rounded-[1.5rem] py-6 px-6 md:px-10 relative overflow-hidden shadow-lg z-20 animate-fade-in">
