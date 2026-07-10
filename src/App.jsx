@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Features from './components/Features'
 import Services from './components/Services'
 import './App.css'
 
@@ -13,6 +14,7 @@ function App() {
       {/* Main content area */}
       <main>
         <Hero />
+        <Features />
         <Services />
       </main>
     </div>
