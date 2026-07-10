@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutImg from '../assets/about_building.png';
+import storyImg from '../assets/about_story_living.png';
 
 export default function AboutUs() {
   return (
@@ -155,6 +156,103 @@ export default function AboutUs() {
               </div>
 
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Our Story Section */}
+      <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-stone-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            {/* Left Column: Cozy Living Room Image */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="rounded-[2rem] overflow-hidden shadow-md w-full max-w-lg lg:max-w-none aspect-[4/3] relative">
+                <img
+                  src={storyImg}
+                  alt="Cozy luxury home interior"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Right Column: Story Copy */}
+            <div className="lg:col-span-7 flex flex-col items-start">
+              
+              {/* Branded Category Tag */}
+              <span className="text-xs sm:text-sm font-bold tracking-[0.25em] text-[#D49D0E] uppercase mb-4">
+                OUR STORY
+              </span>
+
+              {/* Title */}
+              <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight leading-tight">
+                Your Dream, Our Mission
+              </h2>
+
+              {/* Decorative Bullet Line */}
+              <div className="flex items-center gap-1.5 mt-5 mb-6">
+                <span className="h-[2px] w-12 bg-[#D49D0E]"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#D49D0E]"></span>
+              </div>
+
+              {/* Paragraphs */}
+              <p className="text-stone-600 font-semibold text-xs sm:text-sm leading-relaxed mb-4">
+                Thirumalai Properties was founded with a simple goal – to provide honest, reliable and result-driven real estate services.
+              </p>
+              <p className="text-stone-500 font-semibold text-xs sm:text-sm leading-relaxed mb-10">
+                We understand that every property decision is important. That's why we focus on building long-term relationships based on trust, integrity and transparency.
+              </p>
+
+              {/* Core Values Rows (3 Columns) */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full">
+                
+                {/* Value 1 */}
+                <div className="flex flex-col items-start text-left">
+                  <div className="w-14 h-14 rounded-full bg-[#FFFDF9] border border-[#D49D0E]/20 flex items-center justify-center mb-4 text-[#D49D0E]">
+                    <svg viewBox="0 0 24 24" className="w-6.5 h-6.5 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                  </div>
+                  <h4 className="text-sm sm:text-base font-extrabold text-stone-900 mb-1.5">Client First</h4>
+                  <p className="text-xs font-semibold text-stone-500 leading-relaxed">
+                    We listen, understand and deliver what's best for you.
+                  </p>
+                </div>
+
+                {/* Value 2 */}
+                <div className="flex flex-col items-start text-left">
+                  <div className="w-14 h-14 rounded-full bg-[#FFFDF9] border border-[#D49D0E]/20 flex items-center justify-center mb-4 text-[#D49D0E]">
+                    <svg viewBox="0 0 24 24" className="w-6.5 h-6.5 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <polyline points="9 11 11 13 15 9" strokeWidth="2" />
+                    </svg>
+                  </div>
+                  <h4 className="text-sm sm:text-base font-extrabold text-stone-900 mb-1.5">Integrity</h4>
+                  <p className="text-xs font-semibold text-stone-500 leading-relaxed">
+                    Honesty and transparency in every step.
+                  </p>
+                </div>
+
+                {/* Value 3 */}
+                <div className="flex flex-col items-start text-left">
+                  <div className="w-14 h-14 rounded-full bg-[#FFFDF9] border border-[#D49D0E]/20 flex items-center justify-center mb-4 text-[#D49D0E]">
+                    <svg viewBox="0 0 24 24" className="w-6.5 h-6.5 text-[#D49D0E] stroke-current stroke-[1.5] fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  </div>
+                  <h4 className="text-sm sm:text-base font-extrabold text-stone-900 mb-1.5">Excellence</h4>
+                  <p className="text-xs font-semibold text-stone-500 leading-relaxed">
+                    High standards and commitment in everything we do.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
         </div>
       </section>
