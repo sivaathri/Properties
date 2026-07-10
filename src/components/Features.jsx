@@ -100,7 +100,7 @@ export default function Features() {
 
               {/* Centered Short Vertical Divider Line */}
               {idx < 3 && (
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-16 bg-[#D49D0E]/20 hidden lg:block" />
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-9 bg-[#D49D0E]/20 hidden lg:block" />
               )}
             </div>
           ))}
@@ -123,7 +123,7 @@ export default function Features() {
               <span className="text-xl sm:text-2xl md:text-3xl font-extrabold text-brand-dark leading-none">100+</span>
               <span className="text-xs sm:text-sm font-semibold text-brand-dark/80 mt-1 leading-tight">Happy Clients</span>
             </div>
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-10 bg-white/40 hidden lg:block" />
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-5 bg-white/40 hidden lg:block" />
           </div>
 
           {/* Stat 2: Properties Consulted */}
@@ -142,7 +142,7 @@ export default function Features() {
               <span className="text-xl sm:text-2xl md:text-3xl font-extrabold text-brand-dark leading-none">250+</span>
               <span className="text-xs sm:text-sm font-semibold text-brand-dark/80 mt-1 leading-tight">Properties Consulted</span>
             </div>
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-10 bg-white/40 hidden lg:block" />
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-5 bg-white/40 hidden lg:block" />
           </div>
 
           {/* Stat 3: Documents Processed */}
@@ -160,7 +160,7 @@ export default function Features() {
               <span className="text-xl sm:text-2xl md:text-3xl font-extrabold text-brand-dark leading-none">500+</span>
               <span className="text-xs sm:text-sm font-semibold text-brand-dark/80 mt-1 leading-tight">Documents Processed</span>
             </div>
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-10 bg-white/40 hidden lg:block" />
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-5 bg-white/40 hidden lg:block" />
           </div>
 
           {/* Stat 4: Years Experience */}
