@@ -33,55 +33,7 @@ export default function Hero() {
               For A Better Tomorrow
             </p>
 
-            {/* Stats Cards Row */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-12 max-w-xl">
-              
-              {/* Stat 1: Happy Clients */}
-              <div className="flex items-center gap-2 sm:gap-3 pr-2 sm:pr-4 border-r border-[#D49D0E]/20">
-                <div className="flex-shrink-0 w-11 h-11 sm:w-12 sm:h-12 rounded-full border-[1.5px] border-[#D49D0E] flex items-center justify-center bg-amber-50/20">
-                  <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#D49D0E] fill-none stroke-current stroke-[1.75]" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-                    <circle cx="9" cy="7" r="4" />
-                    <path d="M23 21v-2a4 4 0 00-3-3.87" />
-                    <path d="M16 3.13a4 4 0 010 7.75" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-base sm:text-lg font-bold text-stone-900 leading-none mb-1">100+</div>
-                  <div className="text-[10px] sm:text-xs text-stone-500 font-semibold uppercase tracking-wider leading-tight">Happy Clients</div>
-                </div>
-              </div>
 
-              {/* Stat 2: Properties Consulted */}
-              <div className="flex items-center gap-2 sm:gap-3 px-2 sm:px-4 border-r border-[#D49D0E]/20">
-                <div className="flex-shrink-0 w-11 h-11 sm:w-12 sm:h-12 rounded-full border-[1.5px] border-[#D49D0E] flex items-center justify-center bg-amber-50/20">
-                  <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#D49D0E] fill-none stroke-current stroke-[1.75]" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="2" y="2" width="20" height="20" rx="2" ry="2" />
-                    <path d="M7 21V9a2 2 0 012-2h6a2 2 0 012 2v12" />
-                    <path d="M9 11h.01M9 15h.01M15 11h.01M15 15h.01" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-base sm:text-lg font-bold text-stone-900 leading-none mb-1">250+</div>
-                  <div className="text-[10px] sm:text-xs text-stone-500 font-semibold uppercase tracking-wider leading-tight">Properties Consulted</div>
-                </div>
-              </div>
-
-              {/* Stat 3: Years of Experience */}
-              <div className="flex items-center gap-2 sm:gap-3 pl-2 sm:pl-4">
-                <div className="flex-shrink-0 w-11 h-11 sm:w-12 sm:h-12 rounded-full border-[1.5px] border-[#D49D0E] flex items-center justify-center bg-amber-50/20">
-                  <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#D49D0E] fill-none stroke-current stroke-[1.75]" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="8" r="7" />
-                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-base sm:text-lg font-bold text-stone-900 leading-none mb-1">10+</div>
-                  <div className="text-[10px] sm:text-xs text-stone-500 font-semibold uppercase tracking-wider leading-tight">Years of Experience</div>
-                </div>
-              </div>
-
-            </div>
 
             {/* Action Buttons Row */}
             <div className="flex flex-row items-center gap-4 sm:gap-6">

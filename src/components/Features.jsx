@@ -106,6 +106,80 @@ export default function Features() {
           ))}
         </div>
       </div>
+
+      {/* Full-width Gold Statistics Bar */}
+      <div className="bg-[#F5BC04] rounded-2xl md:rounded-[2rem] py-8 px-6 sm:px-10 mt-12 shadow-sm relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 items-center justify-between">
+          
+          {/* Stat 1: Happy Clients */}
+          <div className="relative flex items-center justify-center gap-4 px-4">
+            <div className="flex-shrink-0">
+              <svg viewBox="0 0 24 24" className="w-11 h-11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 10.5L12 2.5L21 10.5V21.5H3V10.5Z" fill="white" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M9 17.5c0-2.5 1.2-3.8 3-3.8s3 1.3 3 3.8" stroke="#D29F13" strokeWidth="2.2" strokeLinecap="round" />
+              </svg>
+            </div>
+            <div className="flex flex-col text-left">
+              <span className="text-xl sm:text-2xl md:text-3xl font-extrabold text-brand-dark leading-none">100+</span>
+              <span className="text-xs sm:text-sm font-semibold text-brand-dark/80 mt-1 leading-tight">Happy Clients</span>
+            </div>
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-10 bg-white/40 hidden lg:block" />
+          </div>
+
+          {/* Stat 2: Properties Consulted */}
+          <div className="relative flex items-center justify-center gap-4 px-4">
+            <div className="flex-shrink-0">
+              <svg viewBox="0 0 24 24" className="w-11 h-11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="10" width="4" height="11" fill="white" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <rect x="8" y="3" width="8" height="18" fill="white" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <rect x="17" y="8" width="4" height="13" fill="white" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <line x1="11" y1="7" x2="13" y2="7" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" />
+                <line x1="11" y1="11" x2="13" y2="11" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" />
+                <line x1="11" y1="15" x2="13" y2="15" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" />
+              </svg>
+            </div>
+            <div className="flex flex-col text-left">
+              <span className="text-xl sm:text-2xl md:text-3xl font-extrabold text-brand-dark leading-none">250+</span>
+              <span className="text-xs sm:text-sm font-semibold text-brand-dark/80 mt-1 leading-tight">Properties Consulted</span>
+            </div>
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-10 bg-white/40 hidden lg:block" />
+          </div>
+
+          {/* Stat 3: Documents Processed */}
+          <div className="relative flex items-center justify-center gap-4 px-4">
+            <div className="flex-shrink-0">
+              <svg viewBox="0 0 24 24" className="w-11 h-11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="white" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <polyline points="14 2 14 8 20 8" stroke="#D29F13" strokeWidth="2" fill="white" strokeLinecap="round" strokeLinejoin="round" />
+                <line x1="16" y1="13" x2="8" y2="13" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" />
+                <line x1="16" y1="17" x2="8" y2="17" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" />
+                <line x1="10" y1="9" x2="8" y2="9" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" />
+              </svg>
+            </div>
+            <div className="flex flex-col text-left">
+              <span className="text-xl sm:text-2xl md:text-3xl font-extrabold text-brand-dark leading-none">500+</span>
+              <span className="text-xs sm:text-sm font-semibold text-brand-dark/80 mt-1 leading-tight">Documents Processed</span>
+            </div>
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-10 bg-white/40 hidden lg:block" />
+          </div>
+
+          {/* Stat 4: Years Experience */}
+          <div className="relative flex items-center justify-center gap-4 px-4">
+            <div className="flex-shrink-0">
+              <svg viewBox="0 0 24 24" className="w-11 h-11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12" fill="white" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="12" cy="8" r="5" fill="white" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="12" cy="8" r="2.5" fill="none" stroke="#D29F13" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+            <div className="flex flex-col text-left">
+              <span className="text-xl sm:text-2xl md:text-3xl font-extrabold text-brand-dark leading-none">10+</span>
+              <span className="text-xs sm:text-sm font-semibold text-brand-dark/80 mt-1 leading-tight">Years Experience</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   );
 }
