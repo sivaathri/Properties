@@ -91,18 +91,18 @@ export default function Process() {
         <div className="relative">
           
           {/* Desktop Connecting Line & Dots */}
-          <div className="absolute top-[36px] -translate-y-1/2 left-[10%] right-[10%] h-[1.5px] bg-[#D49D0E]/30 -z-10 hidden lg:block" />
+          <div className="absolute top-[36px] -translate-y-1/2 left-[10%] right-[10%] h-[2px] bg-[#D49D0E] z-0 hidden lg:block" />
           
           {/* Centered Dots Between Nodes on Desktop */}
-          <div className="absolute top-[36px] -translate-y-1/2 left-0 right-0 w-full -z-10 hidden lg:block">
-            <div className="absolute left-[20%] -translate-x-1/2 w-2 h-2 rounded-full bg-[#D49D0E]" />
-            <div className="absolute left-[40%] -translate-x-1/2 w-2 h-2 rounded-full bg-[#D49D0E]" />
-            <div className="absolute left-[60%] -translate-x-1/2 w-2 h-2 rounded-full bg-[#D49D0E]" />
-            <div className="absolute left-[80%] -translate-x-1/2 w-2 h-2 rounded-full bg-[#D49D0E]" />
+          <div className="absolute top-[36px] -translate-y-1/2 left-0 right-0 w-full z-0 hidden lg:block">
+            <div className="absolute left-[20%] -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-[#D49D0E]" />
+            <div className="absolute left-[40%] -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-[#D49D0E]" />
+            <div className="absolute left-[60%] -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-[#D49D0E]" />
+            <div className="absolute left-[80%] -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-[#D49D0E]" />
           </div>
 
           {/* Mobile Connecting Line (Vertical) */}
-          <div className="absolute left-[36px] top-6 bottom-6 w-[1.5px] bg-[#D49D0E]/30 -z-10 lg:hidden" />
+          <div className="absolute left-[36px] top-6 bottom-6 w-[2px] bg-[#D49D0E] z-0 lg:hidden" />
 
           {/* Steps Wrapper */}
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-6">
