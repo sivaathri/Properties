@@ -8,12 +8,33 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
   const activeTab = propsActiveTab !== undefined ? propsActiveTab : localActiveTab;
   const setActiveTab = propsSetActiveTab !== undefined ? propsSetActiveTab : setLocalActiveTab;
 
+  const handleNavClick = (e, name) => {
+    e.preventDefault();
+    if (name === 'About Us') {
+      setActiveTab('Home');
+      setTimeout(() => {
+        const element = document.querySelector('#about-us');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    } else if (name === 'Contact') {
+      const element = document.querySelector('#contact');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      setActiveTab(name);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   const navItems = [
     { name: 'Home', href: '#home', hasDropdown: false },
     { name: 'Properties', href: '#Properties', hasDropdown: false },
     { name: 'Documents', href: '#Documents', hasDropdown: false },
     { name: 'NRI Property', href: '#NRI-Property', hasDropdown: false },
-       { name: 'About Us', href: '#about-us', hasDropdown: false },
+    { name: 'About Us', href: '#about-us', hasDropdown: false },
     { name: 'Contact', href: '#contact', hasDropdown: false },
   ];
 
@@ -49,7 +70,7 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
               <div key={item.name} className="relative group flex items-center">
                 <a
                   href={item.href}
-                  onClick={() => setActiveTab(item.name)}
+                  onClick={(e) => handleNavClick(e, item.name)}
                   className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-all duration-300 py-2 outline-none focus:outline-none ${activeTab === item.name
                       ? 'text-brand-yellow'
                       : 'text-stone-700 hover:text-brand-gold'
@@ -122,8 +143,8 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
             <a
               key={item.name}
               href={item.href}
-              onClick={() => {
-                setActiveTab(item.name);
+              onClick={(e) => {
+                handleNavClick(e, item.name);
                 setIsOpen(false);
               }}
               className={`block px-4 py-3 rounded-lg text-base font-semibold transition-all outline-none focus:outline-none ${activeTab === item.name

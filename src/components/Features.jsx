@@ -63,7 +63,7 @@ export default function Features() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 relative z-20">
+    <div id="about-us" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 relative z-20">
       
       {/* Section Header */}
       <div className="flex flex-col items-center mb-8">

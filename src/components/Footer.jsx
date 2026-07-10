@@ -24,8 +24,48 @@ export default function Footer({ setActiveTab }) {
     });
   };
 
+  const handleLinkClick = (e, linkName) => {
+    e.preventDefault();
+    if (setActiveTab) {
+      if (linkName === 'About Us') {
+        setActiveTab('Home');
+        setTimeout(() => {
+          const element = document.querySelector('#about-us');
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
+      } else if (linkName === 'Contact') {
+        const element = document.querySelector('#contact');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        setActiveTab(linkName);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  };
+
+  const handleServiceClick = (e, tabName, targetId) => {
+    e.preventDefault();
+    if (setActiveTab) {
+      setActiveTab(tabName);
+    }
+    setTimeout(() => {
+      if (targetId) {
+        const element = document.querySelector(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
-    <footer className="w-full relative overflow-hidden">
+    <footer id="contact" className="w-full relative overflow-hidden">
       
       {/* 1. Top CTA Banner (Bright Gold Gradient) */}
       <div className="w-full bg-gradient-to-r from-[#F5BC04] via-[#F4B400] to-[#E5A900] relative py-4 md:py-5 px-4 sm:px-6 lg:px-8 border-b border-stone-200/20 z-10 shadow-inner">
@@ -39,9 +79,7 @@ export default function Footer({ setActiveTab }) {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-20">
           {/* CTA Text */}
           <div className="text-center md:text-left md:pl-28 lg:pl-36 xl:pl-48">
-            <span className="text-xs sm:text-sm font-semibold text-[#23190E]/80 tracking-wider uppercase">
-              Need Property Assistance?
-            </span>
+           
             <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#23190E] mt-1 leading-tight">
               We're Here to Help You!
             </h3>
@@ -141,15 +179,11 @@ export default function Footer({ setActiveTab }) {
                 Quick Links
               </h4>
               <ul className="space-y-3.5 text-sm font-semibold">
-                {['Home', 'Properties', 'Document', 'NRI Property','About Us', 'Contact'].map((link) => (
+                {['Home', 'Properties', 'Documents', 'NRI Property','About Us', 'Contact'].map((link) => (
                   <li key={link}>
                     <a
                       href={`#${link.toLowerCase().replace(' ', '-')}`}
-                      onClick={() => {
-                        if (setActiveTab) {
-                          setActiveTab(link);
-                        }
-                      }}
+                      onClick={(e) => handleLinkClick(e, link)}
                       className="hover:text-white transition-all duration-300"
                     >
                       {link}
@@ -166,12 +200,16 @@ export default function Footer({ setActiveTab }) {
               </h4>
               <ul className="space-y-3.5 text-sm font-semibold leading-snug">
                 {[
-                  { text: 'Buying & Selling of Properties', href: '#services' },
-                  { text: 'Document Registration & Writing', href: '#services' },
-                  { text: 'NRI Property Management', href: '#services' }
+                  { text: 'Buying & Selling of Properties', tab: 'Home', targetId: '#services' },
+                  { text: 'Document Registration & Writing', tab: 'Documents', targetId: null },
+                  { text: 'NRI Property Management', tab: 'NRI Property', targetId: null }
                 ].map((item, i) => (
                   <li key={i}>
-                    <a href={item.href} className="hover:text-white transition-all duration-300">
+                    <a 
+                      href="#" 
+                      onClick={(e) => handleServiceClick(e, item.tab, item.targetId)}
+                      className="hover:text-white transition-all duration-300"
+                    >
                       {item.text}
                     </a>
                   </li>

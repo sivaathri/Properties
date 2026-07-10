@@ -7,6 +7,7 @@ import Process from './components/Process'
 import Footer from './components/Footer'
 import Properties from './components/Properties'
 import Documents from './components/Documents'
+import NRI from './components/NRI'
 import './App.css'
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
           <Properties />
         ) : activeTab === 'Documents' ? (
           <Documents />
+        ) : activeTab === 'NRI Property' ? (
+          <NRI />
         ) : (
           <>
             <Hero />
