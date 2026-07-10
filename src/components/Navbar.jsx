@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logoImg from '../assets/logo.png';
+import logoSymbol from '../assets/logo2.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,15 +17,27 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-stone-100 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-20 md:h-24">
           
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
+          <a href="#home" className="flex flex-col items-center justify-center group py-1">
             <img 
-              src={logoImg} 
-              alt="Thirumalai Properties Logo" 
-              className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]" 
+              src={logoSymbol} 
+              alt="Thirumalai Properties Icon" 
+              className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]" 
             />
+            <div className="flex flex-col items-center mt-1 select-none">
+              <span className="font-serif font-bold text-lg md:text-xl tracking-[0.12em] leading-none bg-gradient-to-b from-[#F5BC04] via-[#D29F13] to-[#9F7202] bg-clip-text text-transparent">
+                THIRUMALAI
+              </span>
+              <div className="flex items-center gap-1.5 mt-0.5">
+                <span className="h-[1px] w-3.5 bg-[#D29F13]/80"></span>
+                <span className="text-[9px] md:text-[10px] font-bold tracking-[0.25em] text-[#D29F13] leading-none uppercase">
+                  PROPERTIES
+                </span>
+                <span className="h-[1px] w-3.5 bg-[#D29F13]/80"></span>
+              </div>
+            </div>
           </a>
 
           {/* Desktop Navigation Links */}
@@ -63,10 +75,10 @@ export default function Navbar() {
           </nav>
 
           {/* Phone Call Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:block lg:-mr-4">
             <a
               href="tel:+911234567890"
-              className="flex items-center gap-2 bg-brand-yellow hover:bg-[#E5B002] active:scale-95 text-brand-dark px-6 py-2 rounded-xl font-bold tracking-wide shadow-md hover:shadow-lg transition-all duration-300"
+              className="flex items-center gap-3.5 bg-brand-yellow hover:bg-[#E5B002] active:scale-95 text-brand-dark px-6 py-2.5 rounded-xl font-bold tracking-wide shadow-md hover:shadow-lg transition-all duration-300"
             >
               <svg viewBox="0 0 24 24" className="w-5 h-5 text-brand-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 00-1.02.24l-2.2 2.2a15.1 15.1 0 01-6.59-6.59l2.2-2.2a1 1 0 00.25-1.02A11.36 11.36 0 008.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z" />

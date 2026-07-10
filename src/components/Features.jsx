@@ -64,14 +64,24 @@ export default function Features() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 relative z-20">
-      <div className="bg-[#FAF9F5]/70 border border-stone-100 rounded-[2rem] py-10 px-6 sm:px-8 shadow-sm">
+      
+      {/* Section Header */}
+      <div className="flex flex-col items-center mb-8">
+        <div className="flex items-center gap-3">
+          <span className="h-[1.5px] w-8 bg-[#D49D0E]"></span>
+          <span className="text-xs sm:text-sm font-bold tracking-[0.25em] text-[#D49D0E] uppercase">
+            WHY CHOOSE US
+          </span>
+          <span className="h-[1.5px] w-8 bg-[#D49D0E]"></span>
+        </div>
+      </div>
+
+      <div className="bg-[#FAF7F0] rounded-[2rem] py-12 px-6 sm:px-8 shadow-sm">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 items-start">
           {items.map((item, idx) => (
             <div 
               key={idx} 
-              className={`flex flex-col items-center text-center px-4 lg:px-6 ${
-                idx < 3 ? 'lg:border-r lg:border-[#F5BC04]/25' : ''
-              }`}
+              className="relative flex flex-col items-center text-center px-4 lg:px-6"
             >
               {/* Icon Container */}
               <div className="mb-5 flex items-center justify-center h-14 w-14">
@@ -84,9 +94,14 @@ export default function Features() {
               </h3>
               
               {/* Feature Description */}
-              <p className="text-xs sm:text-sm text-stone-500 font-medium leading-relaxed mt-2 max-w-[240px]">
+              <p className="text-xs sm:text-sm font-medium leading-relaxed mt-2 max-w-[240px]">
                 {item.desc}
               </p>
+
+              {/* Centered Short Vertical Divider Line */}
+              {idx < 3 && (
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-16 bg-[#D49D0E]/20 hidden lg:block" />
+              )}
             </div>
           ))}
         </div>

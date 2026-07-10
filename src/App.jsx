@@ -14,8 +14,9 @@ function App() {
       {/* Main content area */}
       <main>
         <Hero />
-        <Features />
+
         <Services />
+        <Features />
       </main>
     </div>
   )
