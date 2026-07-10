@@ -153,8 +153,11 @@ export default function Documents() {
               fill="none" 
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M-10 240 C 250 245, 500 155, 810 30 L 810 295 L -10 295 Z" fill="#F5BC04" />
-              <path d="M-10 260 C 250 265, 500 175, 810 50 L 810 295 L -10 295 Z" fill="white" />
+              {/* White Bottom Wave Overlay (Starting from x=150) */}
+              <path d="M 150 280 C 350 280, 550 195, 810 30 L 810 295 L 150 295 Z" fill="white" />
+              
+              {/* Gold Stroke Ribbon Overlay (Starting from x=150) */}
+              <path d="M 150 280 C 350 280, 550 195, 810 30" stroke="#F5BC04" strokeWidth="8" fill="none" strokeLinecap="round" />
             </svg>
           </div>
         </div>
