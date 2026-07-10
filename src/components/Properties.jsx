@@ -90,10 +90,10 @@ export default function Properties({ setActiveTab }) {
                 <a
                   href="#contact"
                   onClick={(e) => {
-                    if (setActiveTab) {
-                      e.preventDefault();
-                      setActiveTab('Contact');
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    e.preventDefault();
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
                   className="flex items-center justify-center gap-2.5 bg-[#D49D0E] hover:bg-[#B5820C] active:scale-98 text-white px-6 sm:px-8 py-3.5 rounded-lg font-bold text-sm tracking-wider shadow-sm hover:shadow-md transition-all duration-300"
@@ -107,10 +107,10 @@ export default function Properties({ setActiveTab }) {
                 <a
                   href="#contact"
                   onClick={(e) => {
-                    if (setActiveTab) {
-                      e.preventDefault();
-                      setActiveTab('Contact');
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    e.preventDefault();
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
                   className="flex items-center justify-center gap-2.5 bg-white hover:bg-stone-50 active:scale-98 text-[#D49D0E] border-[1.5px] border-[#D49D0E] px-6 sm:px-8 py-3.5 rounded-lg font-bold text-sm tracking-wider shadow-sm transition-all duration-300"
@@ -301,10 +301,10 @@ export default function Properties({ setActiveTab }) {
                 <a
                   href="#contact"
                   onClick={(e) => {
-                    if (setActiveTab) {
-                      e.preventDefault();
-                      setActiveTab('Contact');
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    e.preventDefault();
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
                   className="flex items-center gap-2 bg-[#E5A900] hover:bg-[#C99100] active:scale-95 text-white px-5 py-2.5 rounded-xl font-bold text-xs tracking-wider transition-all duration-300 shadow-sm"
@@ -342,10 +342,10 @@ export default function Properties({ setActiveTab }) {
                 <a
                   href="#contact"
                   onClick={(e) => {
-                    if (setActiveTab) {
-                      e.preventDefault();
-                      setActiveTab('Contact');
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    e.preventDefault();
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
                   className="flex items-center gap-2 bg-[#E5A900] hover:bg-[#C99100] active:scale-95 text-white px-5 py-2.5 rounded-xl font-bold text-xs tracking-wider transition-all duration-300 shadow-sm"
@@ -577,10 +577,10 @@ export default function Properties({ setActiveTab }) {
             <a
               href="#contact"
               onClick={(e) => {
-                if (setActiveTab) {
-                  e.preventDefault();
-                  setActiveTab('Contact');
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                e.preventDefault();
+                const element = document.getElementById('contact');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
               className="flex items-center gap-2.5 bg-[#E5A900] hover:bg-[#C99100] active:scale-95 text-white px-5 py-2.5 rounded-xl font-bold text-xs tracking-wider transition-all duration-300 shadow-md hover:shadow-lg"
