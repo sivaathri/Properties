@@ -153,8 +153,8 @@ export default function Documents() {
               fill="none" 
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M 150 295 C 350 295, 550 210, 810 45 L 810 295 Z" fill="#F5BC04" />
-              <path d="M 0 295 C 250 295, 500 150, 810 0 L 810 295 Z" fill="white" />
+              <path d="M-10 240 C 250 245, 500 155, 810 30 L 810 295 L -10 295 Z" fill="#F5BC04" />
+              <path d="M-10 260 C 250 265, 500 175, 810 50 L 810 295 L -10 295 Z" fill="white" />
             </svg>
           </div>
         </div>
