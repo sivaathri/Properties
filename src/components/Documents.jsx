@@ -1,5 +1,5 @@
 import React from 'react';
-import docsImg from '../assets/service_documents.png';
+import docsImg from '../assets/mainbond.png';
 import footerImg from '../assets/footer.png';
 import aptImg from '../assets/tes.png';
 

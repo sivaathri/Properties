@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import heroBg from '../assets/propertiesbg.png';
+import heroBg from '../assets/service_buying.png';
 import villaImg from '../assets/luxury_villa.png';
 import buyingImg from '../assets/service_buying.png';
 import nriImg from '../assets/service_nri.png';

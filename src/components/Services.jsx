@@ -1,6 +1,6 @@
 import React from 'react';
 import buyingImg from '../assets/service_buying.png';
-import docsImg from '../assets/service_documents.png';
+import docsImg from '../assets/bond.png';
 import nriImg from '../assets/service_nri.png';
 
 export default function Services({ setActiveTab }) {
