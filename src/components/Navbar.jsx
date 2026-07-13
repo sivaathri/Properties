@@ -93,7 +93,7 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
                 <path d="M14 6.5c1.5 0 3 1.5 3 3" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
                 <path d="M14 3.5c3.2 0 6 2.8 6 6" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
               </svg>
-              <span> +91 96556 11234</span>
+              <span>+91 95144 76555</span>
             </a>
           </div>
 
@@ -150,7 +150,7 @@ export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsS
                 <path d="M14 6.5c1.5 0 3 1.5 3 3" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
                 <path d="M14 3.5c3.2 0 6 2.8 6 6" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
               </svg>
-              <span> +91 96556 11234</span>
+              <span>+91 95144 76555</span>
             </a>
           </div>
         </div>
