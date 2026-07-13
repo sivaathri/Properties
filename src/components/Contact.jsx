@@ -405,16 +405,18 @@ export default function Contact() {
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
               </div>
-              <div className="flex flex-col max-w-[160px] sm:max-w-none">
+              <div className="flex flex-col min-w-0 flex-1">
                 <span className="text-sm font-extrabold text-stone-900 group-hover:text-[#D49D0E] transition-colors">Email Us</span>
                 <span className="text-[11px] font-semibold text-stone-400 mt-0.5">Drop us an email anytime</span>
-                <span className="text-xs font-extrabold text-[#673AB7] mt-2 truncate">mail.thirumalaiproperties@gmail.com</span>
+                <span className="text-xs font-extrabold text-[#673AB7] mt-2 truncate block" title="mail.thirumalaiproperties@gmail.com">
+                  mail.thirumalaiproperties@gmail.com
+                </span>
               </div>
             </a>
 
-            {/* Card 4: Visit Office */}
+           
             <a
-              href="https://maps.google.com/?q=No.+45,+Kamarajar+Salai,+Puducherry+-+605001"
+              href="https://maps.google.com/?q=No.+17,+Sakthi+Nagar+Main+Road,+Saram,+Puducherry+-+605013"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white border border-stone-100/80 hover:border-[#D49D0E]/30 hover:shadow-md rounded-2xl p-6 flex items-center gap-4 transition-all duration-300 group"
