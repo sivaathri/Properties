@@ -257,7 +257,7 @@ export default function Footer({ setActiveTab }) {
           {/* Copyright & Legal Row */}
           <div className="border-t border-[#23190E]/10 mt-8 pt-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-semibold">
             <span>
-              © 2026 Pondy IT Solutions.
+              © 2026 THIRUMALAI PROPERTIES.
             </span>
 
           </div>

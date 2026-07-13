@@ -147,7 +147,7 @@ export default function Properties({ setActiveTab }) {
       </section>
 
       {/* 2. Why Choose Section (Value Propositions) */}
-      <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-stone-100">
+      <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
 
           {/* Section Header */}

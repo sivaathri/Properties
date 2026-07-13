@@ -184,7 +184,9 @@ export default function Contact() {
                   </div>
                   <div className="flex flex-col">
                     <span className="text-[11px] font-extrabold text-stone-400 uppercase tracking-wider mb-0.5">Email</span>
-                    <span className="text-[#D49D0E] text-sm font-extrabold leading-tight select-all">thirumalaipropertiespy@gmail.com</span>
+                    <a href="mailto:mail.thirumalaiproperties@gmail.com" className="text-[#D49D0E] text-sm font-extrabold leading-tight select-all hover:underline">
+                      mail.thirumalaiproperties@gmail.com
+                    </a>
                   </div>
                 </li>
 
@@ -395,7 +397,7 @@ export default function Contact() {
 
             {/* Card 3: Email Us */}
             <a
-              href="mailto:thirumalaipropertiespy@gmail.com"
+              href="mailto:mail.thirumalaiproperties@gmail.com"
               className="bg-white border border-stone-100/80 hover:border-purple-100 hover:shadow-md rounded-2xl p-6 flex items-center gap-4 transition-all duration-300 group"
             >
               <div className="w-14 h-14 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
