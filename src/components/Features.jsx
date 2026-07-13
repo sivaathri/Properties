@@ -112,7 +112,7 @@ export default function Features() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 items-center justify-between">
           
           {/* Stat 1: Happy Clients */}
-          <div className="relative flex items-center justify-center gap-4 px-4">
+          <div className="relative flex items-center justify-start lg:justify-center gap-4 px-4 mx-auto w-full max-w-[260px] sm:max-w-[280px] lg:max-w-none">
             <div className="flex-shrink-0">
               <svg viewBox="0 0 24 24" className="w-11 h-11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 10.5L12 2.5L21 10.5V21.5H3V10.5Z" fill="white" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -127,7 +127,7 @@ export default function Features() {
           </div>
 
           {/* Stat 2: Properties Consulted */}
-          <div className="relative flex items-center justify-center gap-4 px-4">
+          <div className="relative flex items-center justify-start lg:justify-center gap-4 px-4 mx-auto w-full max-w-[260px] sm:max-w-[280px] lg:max-w-none">
             <div className="flex-shrink-0">
               <svg viewBox="0 0 24 24" className="w-11 h-11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="3" y="10" width="4" height="11" fill="white" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -146,7 +146,7 @@ export default function Features() {
           </div>
 
           {/* Stat 3: Documents Processed */}
-          <div className="relative flex items-center justify-center gap-4 px-4">
+          <div className="relative flex items-center justify-start lg:justify-center gap-4 px-4 mx-auto w-full max-w-[260px] sm:max-w-[280px] lg:max-w-none">
             <div className="flex-shrink-0">
               <svg viewBox="0 0 24 24" className="w-11 h-11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="white" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -164,7 +164,7 @@ export default function Features() {
           </div>
 
           {/* Stat 4: Years Experience */}
-          <div className="relative flex items-center justify-center gap-4 px-4">
+          <div className="relative flex items-center justify-start lg:justify-center gap-4 px-4 mx-auto w-full max-w-[260px] sm:max-w-[280px] lg:max-w-none">
             <div className="flex-shrink-0">
               <svg viewBox="0 0 24 24" className="w-11 h-11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12" fill="white" stroke="#D29F13" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

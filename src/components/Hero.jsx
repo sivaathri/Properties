@@ -22,16 +22,23 @@ export default function Hero({ setActiveTab }) {
             </div>
 
             {/* Main Headings */}
-            <h1 className="text-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-[#281B10] mb-5 leading-[1.08]">
-              THIRUMALAI
-              <span className="block text-[#D49D0E] mt-1">PROPERTIES</span>
+            <h1 className="text-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[#281B10] mb-5 leading-[1.08]">
+              YOUR TRUSTED
+              <span className="block text-[#D49D0E] mt-1">REAL ESTATE PARTNER</span>
+              <span className="block mt-1">IN PUDUCHERRY</span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg sm:text-xl md:text-2xl font-semibold text-[#3a3530] mb-10 leading-snug">
-              Trusted Real Estate Solutions <br className="hidden sm:inline" />
-              For A Better Tomorrow
-            </p>
+            <div className="text-base sm:text-lg md:text-xl font-semibold text-[#3a3530] mb-10 leading-relaxed">
+              <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                <span>Buying</span>
+                <span className="text-[#D49D0E] font-bold">•</span>
+                <span>Selling</span>
+                <span className="text-[#D49D0E] font-bold">•</span>
+                <span>Document Registration</span>
+              </div>
+              <div className="mt-1.5">NRI Property Management</div>
+            </div>
 
 
 
