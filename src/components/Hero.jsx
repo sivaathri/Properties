@@ -25,7 +25,7 @@ export default function Hero({ setActiveTab }) {
             <h1 className="text-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[#281B10] mb-5 leading-[1.08]">
               YOUR TRUSTED
               <span className="block text-[#D49D0E] mt-1">REAL ESTATE PARTNER</span>
-              <span className="block mt-1">IN PUDUCHERRY</span>
+              <span className="block mt-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">IN PONDICHERRY </span>
             </h1>
 
             {/* Subtitle */}

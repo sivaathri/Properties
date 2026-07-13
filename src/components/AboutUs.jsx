@@ -34,7 +34,7 @@ export default function AboutUs() {
 
               {/* Description Paragraphs */}
               <p className="text-stone-600 font-semibold text-xs sm:text-sm leading-relaxed max-w-lg mb-5">
-                Thirumalai Properties is a trusted name in real estate, committed to helping clients buy, sell and manage properties with confidence.
+                Thirumalai Properties is a trusted name in real estate, committed to helping clients buy, sell and manage properties in Pondicherry (Puducherry) with confidence.
               </p>
               <p className="text-stone-500 font-semibold text-xs sm:text-sm leading-relaxed max-w-lg mb-8">
                 With years of experience, deep market knowledge and a client-first approach, we make every transaction smooth, transparent and successful.

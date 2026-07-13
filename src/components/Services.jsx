@@ -79,8 +79,8 @@ export default function Services({ setActiveTab }) {
             </span>
             <span className="h-[1.5px] w-8 bg-brand-gold"></span>
           </div>
-          <h2 className="text-serif text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[#281B10] leading-tight">
-            Complete Property Solutions
+          <h2 className="text-serif text-2.5xl sm:text-3.5xl md:text-4.5xl font-bold text-center text-[#281B10] leading-tight">
+            Complete Property Solutions in Pondicherry & Puducherry
           </h2>
         </div>
 
