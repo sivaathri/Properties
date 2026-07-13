@@ -213,11 +213,15 @@ export default function Footer({ setActiveTab }) {
                   </svg>
                   <span>No. 17 sakthi Nagar main road saram Puducherry - 605013</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#23190E] flex-shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg">
+                <li className="flex items-start gap-3">
+                  <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#23190E] flex-shrink-0 mt-0.5 fill-current" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.56 11.56 0 018.82 4c0-.55-.45-1-1-1H4a1 1 0 00-1 1c0 9.39 7.61 17 17 17a1 1 0 001-1v-3.58c0-.56-.45-1.04-1-1.04z" />
                   </svg>
-                  <span> +91 96556 11234</span>
+                  <div className="flex flex-col gap-1">
+                     <span>+91 95144 76555</span>
+                    <span>+91 96556 11234</span>
+                   
+                  </div>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg viewBox="0 0 24 24" className="w-5.5 h-5.5 text-[#23190E] flex-shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg">
