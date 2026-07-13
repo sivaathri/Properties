@@ -1,5 +1,5 @@
 import React from 'react';
-import luxuryVilla from '../assets/herobg.png';
+import luxuryVilla from '../assets/herobg22.png';
 
 export default function Hero({ setActiveTab }) {
   return (
@@ -113,21 +113,11 @@ export default function Hero({ setActiveTab }) {
               fill="none" 
               xmlns="http://www.w3.org/2000/svg"
             >
-              {/* Yellow Top Layer */}
-              <path 
-                d="M 150 295 C 350 295, 550 210, 810 45 L 810 295 Z" 
-                fill="#F5BC04" 
-              />
-              {/* Gold Middle Layer */}
-              <path 
-                d="M 210 295 C 390 295, 570 220, 810 80 L 810 295 Z" 
-                fill="#D29F13" 
-              />
-              {/* White Bottom Layer to match page background */}
-              <path 
-                d="M 270 295 C 430 295, 590 230, 810 115 L 810 295 Z" 
-                fill="#FFFFFF" 
-              />
+              {/* White Bottom Wave Overlay */}
+              <path d="M 150 280 C 350 280, 550 195, 810 30 L 810 295 L 150 295 Z" fill="white" />
+
+              {/* Gold Stroke Ribbon Overlay */}
+              <path d="M 150 280 C 350 280, 550 195, 810 30" stroke="#F5BC04" strokeWidth="8" fill="none" strokeLinecap="round" />
             </svg>
           </div>
 
@@ -155,21 +145,11 @@ export default function Hero({ setActiveTab }) {
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
           >
-            {/* Yellow Top Layer */}
-            <path 
-              d="M 150 295 C 350 295, 550 210, 810 45 L 810 295 Z" 
-              fill="#F5BC04" 
-            />
-            {/* Gold Middle Layer */}
-            <path 
-              d="M 210 295 C 390 295, 570 220, 810 80 L 810 295 Z" 
-              fill="#D29F13" 
-            />
-            {/* White Bottom Layer to match page background */}
-            <path 
-              d="M 270 295 C 430 295, 590 230, 810 115 L 810 295 Z" 
-              fill="#FFFFFF" 
-            />
+            {/* White Bottom Wave Overlay */}
+            <path d="M 150 280 C 350 280, 550 195, 810 30 L 810 295 L 150 295 Z" fill="white" />
+
+            {/* Gold Stroke Ribbon Overlay */}
+            <path d="M 150 280 C 350 280, 550 195, 810 30" stroke="#F5BC04" strokeWidth="8" fill="none" strokeLinecap="round" />
           </svg>
         </div>
       </div>
