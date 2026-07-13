@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import contactImg from '../assets/contact_living.png';
 
 export default function Contact() {
@@ -9,15 +10,52 @@ export default function Contact() {
     subject: '',
     message: ''
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success' | 'error' | null
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-    }, 3000);
+    setIsSending(true);
+    setSubmitStatus(null);
+
+    const serviceId = 'service_wn6kc9q';
+    const templateId =  'template_g6dyyub';
+    const publicKey =  'MTCDA9pydPGW6VqSf';
+
+    // Fallback simulation for development if keys are not set
+    if (serviceId === 'your_service_id' || templateId === 'your_template_id' || publicKey === 'your_public_key') {
+      console.warn("EmailJS credentials not configured. Simulating success in development.");
+      setTimeout(() => {
+        setIsSending(false);
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        setTimeout(() => setSubmitStatus(null), 5000);
+      }, 1500);
+      return;
+    }
+
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      subject: formData.subject,
+      title: formData.subject,
+      message: formData.message,
+    };
+
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log('EmailJS Success:', response.status, response.text);
+        setIsSending(false);
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        setTimeout(() => setSubmitStatus(null), 5000);
+      })
+      .catch((err) => {
+        console.error('EmailJS Error:', err);
+        setIsSending(false);
+        setSubmitStatus('error');
+      });
   };
 
   return (
@@ -230,7 +268,7 @@ export default function Contact() {
                 Fill out the form below and our team will get back to you soon.
               </p>
 
-              {isSubmitted ? (
+              {submitStatus === 'success' ? (
                 <div className="bg-[#FFFDF9] border border-[#D49D0E]/20 rounded-xl p-6 text-center text-[#D49D0E] animate-fade-in">
                   <svg viewBox="0 0 24 24" className="w-12 h-12 text-[#D49D0E] mx-auto mb-3 stroke-current stroke-2 fill-none" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="10" />
@@ -241,6 +279,17 @@ export default function Contact() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+                  {submitStatus === 'error' && (
+                    <div className="bg-red-50 border border-red-200 text-red-700 rounded-xl p-4 text-xs font-semibold flex items-center gap-2.5 animate-fade-in">
+                      <svg viewBox="0 0 24 24" className="w-5 h-5 text-red-500 stroke-current stroke-2 fill-none flex-shrink-0" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="12" y1="8" x2="12" y2="12" />
+                        <line x1="12" y1="16" x2="12.01" y2="16" />
+                      </svg>
+                      <span>Failed to send your message. Please check your connection or contact us directly.</span>
+                    </div>
+                  )}
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     {/* Name */}
                     <div className="flex flex-col gap-2">
@@ -311,13 +360,26 @@ export default function Contact() {
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-2">
                     <button
                       type="submit"
-                      className="bg-[#D49D0E] hover:bg-[#C08C0C] active:scale-95 text-white font-extrabold py-3.5 px-8 rounded-xl shadow-md transition-all duration-300 flex items-center justify-center gap-2 text-sm tracking-wide"
+                      disabled={isSending}
+                      className="bg-[#D49D0E] hover:bg-[#C08C0C] active:scale-95 text-white font-extrabold py-3.5 px-8 rounded-xl shadow-md transition-all duration-300 flex items-center justify-center gap-2 text-sm tracking-wide disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      <span>Send Message</span>
-                      <svg className="w-4 h-4 stroke-current stroke-[2.5] fill-none" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="22" y1="2" x2="11" y2="13" />
-                        <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                      </svg>
+                      {isSending ? (
+                        <>
+                          <span>Sending...</span>
+                          <svg className="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                          </svg>
+                        </>
+                      ) : (
+                        <>
+                          <span>Send Message</span>
+                          <svg className="w-4 h-4 stroke-current stroke-[2.5] fill-none" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="22" y1="2" x2="11" y2="13" />
+                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                          </svg>
+                        </>
+                      )}
                     </button>
 
                     <div className="flex items-center gap-1.5 text-stone-400">
