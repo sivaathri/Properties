@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logoSymbol from '../assets/logo2.png';
+import logoSymbol from '../assets/logo22.png';
 
 export default function Navbar({ activeTab: propsActiveTab, setActiveTab: propsSetActiveTab }) {
   const [isOpen, setIsOpen] = useState(false);

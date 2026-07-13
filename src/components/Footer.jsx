@@ -131,13 +131,28 @@ export default function Footer({ setActiveTab }) {
               {/* Social Icon Rings */}
               <div className="flex items-center gap-3.5">
                 {[
-                  { icon: 'M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z', label: 'Facebook' },
-                  { icon: 'M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z M17.5 6.5h.01', label: 'Instagram', isInsta: true },
-
+                  {
+                    icon: 'M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z M17.5 6.5h.01',
+                    label: 'Instagram',
+                    isInsta: true,
+                    link: 'https://www.instagram.com/thirumalai_properties'
+                  },
+                  {
+                    label: 'YouTube',
+                    isYoutube: true,
+                    link: 'https://www.youtube.com/@ThirumalaiProperties'
+                  },
+                  {
+                    icon: 'M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z',
+                    label: 'Facebook',
+                    link: '#'
+                  },
                 ].map((social, i) => (
                   <a
                     key={i}
-                    href="#"
+                    href={social.link}
+                    target={social.link !== '#' ? '_blank' : undefined}
+                    rel={social.link !== '#' ? 'noopener noreferrer' : undefined}
                     aria-label={social.label}
                     className="w-10 h-10 rounded-full border border-[#23190E]/20 flex items-center justify-center text-[#23190E] hover:border-[#23190E] hover:bg-[#23190E]/5 transition-all duration-300"
                   >
@@ -147,6 +162,11 @@ export default function Footer({ setActiveTab }) {
                           <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                           <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                           <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </>
+                      ) : social.isYoutube ? (
+                        <>
+                          <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.95-1.96 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z" />
+                          <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" />
                         </>
                       ) : (
                         <path d={social.icon} />
@@ -218,9 +238,9 @@ export default function Footer({ setActiveTab }) {
                     <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.56 11.56 0 018.82 4c0-.55-.45-1-1-1H4a1 1 0 00-1 1c0 9.39 7.61 17 17 17a1 1 0 001-1v-3.58c0-.56-.45-1.04-1-1.04z" />
                   </svg>
                   <div className="flex flex-col gap-1">
-                     <span>+91 95144 76555</span>
+                    <span>+91 95144 76555</span>
                     <span>+91 96556 11234</span>
-                   
+
                   </div>
                 </li>
                 <li className="flex items-center gap-3">
