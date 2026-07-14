@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import contactImg from '../assets/contact_living.png';
 
@@ -12,6 +12,25 @@ export default function Contact() {
   });
   const [isSending, setIsSending] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null); // 'success' | 'error' | null
+
+  useEffect(() => {
+    const savedSubject = sessionStorage.getItem('contactSubject');
+    if (savedSubject) {
+      setFormData(prev => ({ ...prev, subject: savedSubject }));
+      sessionStorage.removeItem('contactSubject');
+    }
+
+    const shouldScrollToForm = sessionStorage.getItem('scrollToForm');
+    if (shouldScrollToForm) {
+      sessionStorage.removeItem('scrollToForm');
+      setTimeout(() => {
+        const formElement = document.getElementById('contact-form');
+        if (formElement) {
+          formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 300);
+    }
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -178,7 +197,7 @@ export default function Contact() {
       </section>
 
       {/* 2. Contact Form & Details Section */}
-      <section className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-stone-50 relative z-20">
+      <section id="contact-form" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-stone-50 relative z-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
 
