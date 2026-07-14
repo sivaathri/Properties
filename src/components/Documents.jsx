@@ -103,6 +103,22 @@ export default function Documents({ setActiveTab }) {
               <div className="flex flex-wrap gap-4 items-center">
                 <a
                   href="#services-list"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.getElementById('services-list');
+                    if (element) {
+                      const offset = 100; // Account for the sticky navbar height
+                      const bodyRect = document.body.getBoundingClientRect().top;
+                      const elementRect = element.getBoundingClientRect().top;
+                      const elementPosition = elementRect - bodyRect;
+                      const offsetPosition = elementPosition - offset;
+
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
+                    }
+                  }}
                   className="flex items-center justify-center gap-2.5 bg-[#E5A900] hover:bg-[#C99100] active:scale-98 text-white px-6 sm:px-8 py-3.5 rounded-lg font-bold text-sm tracking-wider shadow-sm transition-all duration-300"
                 >
                   <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
