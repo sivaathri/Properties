@@ -204,6 +204,8 @@ export default function NRI({ setActiveTab }) {
                   onClick={(e) => {
                     if (setActiveTab) {
                       e.preventDefault();
+                      sessionStorage.setItem('contactSubject', 'NRI Property Management Enquiry');
+                      sessionStorage.setItem('scrollToForm', 'true');
                       setActiveTab('Contact');
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     }
