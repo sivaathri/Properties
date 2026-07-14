@@ -93,6 +93,7 @@ export default function Properties({ setActiveTab }) {
                     if (setActiveTab) {
                       e.preventDefault();
                       sessionStorage.setItem('contactSubject', 'I Want to Buy a Property');
+                         sessionStorage.setItem('scrollToForm', 'true');
                       setActiveTab('Contact');
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     }
