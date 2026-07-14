@@ -310,6 +310,7 @@ export default function Properties({ setActiveTab }) {
                     if (setActiveTab) {
                       e.preventDefault();
                       sessionStorage.setItem('contactSubject', 'I Want to Buy a Property');
+                      sessionStorage.setItem('scrollToForm', 'true');
                       setActiveTab('Contact');
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     } else {
@@ -598,10 +599,17 @@ export default function Properties({ setActiveTab }) {
             <a
               href="#contact"
               onClick={(e) => {
-                e.preventDefault();
-                const element = document.getElementById('contact');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
+                if (setActiveTab) {
+                  e.preventDefault();
+                  sessionStorage.setItem('scrollToForm', 'true');
+                  setActiveTab('Contact');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                  e.preventDefault();
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
                 }
               }}
               className="flex items-center gap-2.5 bg-[#E5A900] hover:bg-[#C99100] active:scale-95 text-white px-5 py-2.5 rounded-xl font-bold text-xs tracking-wider transition-all duration-300 shadow-md hover:shadow-lg"

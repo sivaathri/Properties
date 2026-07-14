@@ -119,6 +119,8 @@ export default function Documents({ setActiveTab }) {
                   onClick={(e) => {
                     if (setActiveTab) {
                       e.preventDefault();
+                      sessionStorage.setItem('contactSubject', 'Document Registration Enquiry');
+                      sessionStorage.setItem('scrollToForm', 'true');
                       setActiveTab('Contact');
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     }
@@ -602,6 +604,8 @@ export default function Documents({ setActiveTab }) {
                 onClick={(e) => {
                   if (setActiveTab) {
                     e.preventDefault();
+                    sessionStorage.setItem('contactSubject', 'Document Registration Enquiry');
+                    sessionStorage.setItem('scrollToForm', 'true');
                     setActiveTab('Contact');
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }

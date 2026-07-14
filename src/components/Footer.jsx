@@ -74,7 +74,7 @@ export default function Footer({ setActiveTab }) {
           <div className="flex flex-row items-center gap-4 sm:gap-6 flex-wrap justify-center">
             {/* Call Now Button */}
             <a
-              href="tel:+911234567890"
+              href="tel:+91 9514476555"
               className="flex items-center gap-2.5 bg-white text-[#23190E] hover:bg-stone-50 active:scale-95 px-6 sm:px-8 py-3 rounded-xl font-extrabold text-sm tracking-wide shadow-md transition-all duration-300"
             >
               <svg viewBox="0 0 24 24" className="w-5 h-5 text-[#F5BC04]" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +87,7 @@ export default function Footer({ setActiveTab }) {
 
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/911234567890"
+              href="https://wa.me/9514476555"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2.5 bg-white text-[#23190E] hover:bg-stone-50 active:scale-95 px-6 sm:px-8 py-3 rounded-xl font-extrabold text-sm tracking-wide shadow-md transition-all duration-300"
@@ -125,7 +125,7 @@ export default function Footer({ setActiveTab }) {
                 </div>
               </div>
               <p className="text-xs sm:text-sm font-semibold text-[#23190E] mb-6 leading-relaxed max-w-[280px]">
-                Your Trusted Partner in Real Estate & Documentation Services.
+                Your Trusted Partner in Real Estate & Documentation Services & NRI Properties Management in Pondicherry.
               </p>
 
               {/* Social Icon Rings */}
