@@ -77,6 +77,7 @@ export default function Hero({ setActiveTab }) {
                 onClick={(e) => {
                   if (setActiveTab) {
                     e.preventDefault();
+                    sessionStorage.setItem('scrollToForm', 'true');
                     setActiveTab('Contact');
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }
