@@ -368,6 +368,42 @@ export default function AboutUs() {
               Our experienced professionals are dedicated to providing the best real estate solutions with personalized service and expert advice.
             </p>
           </div>
+
+          {/* Team Members Grid */}
+          <div className="flex flex-col items-center justify-center mt-6">
+            <div className="bg-[#FFFDF9]/60 border border-[#D49D0E]/15 rounded-[2.5rem] p-8 max-w-md w-full shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center text-center">
+              {/* Profile Avatar / Monogram */}
+              <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-[#D49D0E] to-[#F5BC04] border-4 border-white shadow-md flex items-center justify-center mb-6 select-none">
+                <span className="text-2xl font-extrabold text-white tracking-widest">VV</span>
+              </div>
+
+              {/* Name & Titles */}
+              <h3 className="font-serif text-xl font-extrabold text-stone-900 mb-1">
+                A. Vishnu Varadhan BA, DDW
+              </h3>
+              <p className="text-xs font-bold text-[#D49D0E] uppercase tracking-wider mb-4">
+                Document Writer & Real Estate Expert
+              </p>
+
+              {/* Divider Line */}
+              <div className="w-12 h-[1px] bg-[#D49D0E]/30 mb-4"></div>
+
+              {/* Biography Text */}
+              <p className="text-xs sm:text-sm font-semibold text-stone-505 leading-relaxed max-w-xs">
+                With a strong educational background in Arts (BA) and specialized training in Document Writing (DDW), Mr. Vishnu Varadhan offers unparalleled expertise in legal drafting, property registrations, and real estate guidance. He is dedicated to delivering transparent, legally secure, and stress-free transactions for clients in Pondicherry.
+              </p>
+
+              {/* Core Qualities Badges */}
+              <div className="flex flex-wrap justify-center gap-2 mt-5">
+                <span className="text-[9px] font-bold bg-[#FAF7F0] text-[#D49D0E] border border-[#D49D0E]/10 px-2.5 py-1 rounded-full uppercase tracking-wider">
+                  Legal Drafting
+                </span>
+                <span className="text-[9px] font-bold bg-[#FAF7F0] text-[#D49D0E] border border-[#D49D0E]/10 px-2.5 py-1 rounded-full uppercase tracking-wider">
+                  Real Estate Consulting
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
