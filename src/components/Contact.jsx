@@ -441,7 +441,7 @@ export default function Contact() {
 
             {/* Card 1: WhatsApp */}
             <a
-              href="https://wa.me/919514115556"
+              href="https://wa.me/919514476555"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white border border-stone-100/80 hover:border-emerald-100 hover:shadow-md rounded-2xl p-6 flex items-center gap-4 transition-all duration-300 group"
@@ -461,7 +461,7 @@ export default function Contact() {
 
             {/* Card 2: Call Us */}
             <a
-              href="tel:+919655611234"
+              href="tel:+919514476555"
               className="bg-white border border-stone-100/80 hover:border-blue-100 hover:shadow-md rounded-2xl p-6 flex items-center gap-4 transition-all duration-300 group"
             >
               <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
